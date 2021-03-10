@@ -1,0 +1,161 @@
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta charset="UTF-8"><meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1, maximum-scale=5"><meta name="theme-color" content="#1976d2"><meta name="msapplication-TileColor" content="#1976d2"><meta name="msapplication-TileImage" content="/_assets/favicons/mstile-150x150.png"><title>Buy and Sell Logic | ProfitTrailer Wiki</title><meta name="description" content=""><meta property="og:title" content="Buy and Sell Logic"><meta property="og:type" content="website"><meta property="og:description" content=""><meta property="og:image"><meta property="og:url" content="https://wiki.profittrailer.com/en/buyandselllogic"><meta property="og:site_name" content="ProfitTrailer Wiki"><link rel="apple-touch-icon" sizes="180x180" href="/_assets/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="192x192" href="/_assets/favicons/android-chrome-192x192.png"><link rel="icon" type="image/png" sizes="32x32" href="/_assets/favicons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/_assets/favicons/favicon-16x16.png"><link rel="mask-icon" href="/_assets/favicons/safari-pinned-tab.svg" color="#1976d2"><link rel="manifest" href="/_assets/manifest.json"><script>var siteConfig = {"title":"ProfitTrailer Wiki","theme":"default","darkMode":false,"lang":"en","rtl":false,"company":"ProfitTrailer B.V.","contentLicense":"","logoUrl":"/logo-trans-small.png"}
+var siteLangs = [{"code":"en","name":"English"}]
+</script><link type="text/css" rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css"><link type="text/css" rel="stylesheet" href="/_assets/css/app.1be885be7b290bb7c8bc.css"><script type="text/javascript" src="/_assets/js/runtime.js?1601761667"></script><script type="text/javascript" src="/_assets/js/app.js?1601761667"></script></head><body><div id="root"><page locale="en" path="buyandselllogic" title="Buy and Sell Logic" description="" :tags="[]" created-at="2020-07-30T15:55:23.201Z" updated-at="2021-02-27T11:44:07.151Z" author-name="Administrator" :author-id="1" :is-published="true" toc="W3sidGl0bGUiOiJCQVNJQyBCVVlJTkcgQU5EIFNFTExJTkcgR1VJREUgVE8gUFJPRklUVFJBSUxFUiIsImFuY2hvciI6IiNiYXNpYy1idXlpbmctYW5kLXNlbGxpbmctZ3VpZGUtdG8tcHJvZml0dHJhaWxlciIsImNoaWxkcmVuIjpbeyJ0aXRsZSI6IkJVWSBVU0lORyBNVUxUSVBMRSBJTkRJQ0FUT1JTIiwiYW5jaG9yIjoiI2J1eS11c2luZy1tdWx0aXBsZS1pbmRpY2F0b3JzIiwiY2hpbGRyZW4iOlt7InRpdGxlIjoiVFlQRSBNQVRURVJTIiwiYW5jaG9yIjoiI3R5cGUtbWF0dGVycyIsImNoaWxkcmVuIjpbXX1dfSx7InRpdGxlIjoiVU5ERVJTVEFORElORyBUSEUgQlVZIiwiYW5jaG9yIjoiI3VuZGVyc3RhbmRpbmctdGhlLWJ1eSIsImNoaWxkcmVuIjpbeyJ0aXRsZSI6IlBBSVJTIEJVWUlORyIsImFuY2hvciI6IiNwYWlycy1idXlpbmciLCJjaGlsZHJlbiI6W3sidGl0bGUiOiJQb3NzaWJsZSBCdXkgTG9nIiwiYW5jaG9yIjoiI3Bvc3NpYmxlLWJ1eS1sb2ciLCJjaGlsZHJlbiI6W119LHsidGl0bGUiOiJUaGUgTWFpbiBTZXR0aW5nOiBidXlfdmFsdWUiLCJhbmNob3IiOiIjdGhlLW1haW4tc2V0dGluZy1idXlfdmFsdWUiLCJjaGlsZHJlbiI6W119XX0seyJ0aXRsZSI6IkRDQSBCVVlJTkciLCJhbmNob3IiOiIjZGNhLWJ1eWluZyIsImNoaWxkcmVuIjpbXX1dfSx7InRpdGxlIjoiVU5ERVJTVEFORElORyBUSEUgU0VMTCIsImFuY2hvciI6IiN1bmRlcnN0YW5kaW5nLXRoZS1zZWxsIiwiY2hpbGRyZW4iOlt7InRpdGxlIjoiUEFJUlMgU0VMTElORyIsImFuY2hvciI6IiNwYWlycy1zZWxsaW5nIiwiY2hpbGRyZW4iOltdfSx7InRpdGxlIjoiRENBIFNFTExJTkciLCJhbmNob3IiOiIjZGNhLXNlbGxpbmciLCJjaGlsZHJlbiI6W119LHsidGl0bGUiOiJSRVZFUlNBTCBUUkFESU5HIiwiYW5jaG9yIjoiI3JldmVyc2FsLXRyYWRpbmciLCJjaGlsZHJlbiI6W119XX0seyJ0aXRsZSI6IkRFVEFJTEVEIFBCTCBFWFBMQU5BVElPTiIsImFuY2hvciI6IiNkZXRhaWxlZC1wYmwtZXhwbGFuYXRpb24iLCJjaGlsZHJlbiI6W3sidGl0bGUiOiJQYWlycyBDb25maWd1cmF0aW9uOiIsImFuY2hvciI6IiNwYWlycy1jb25maWd1cmF0aW9uIiwiY2hpbGRyZW4iOltdfV19LHsidGl0bGUiOiJIb3cgZGlmZmVyZW50IEJVWSBzdHJhdGVneSBzZXR0aW5ncyBhZmZlY3QgdGhlIFBCTCIsImFuY2hvciI6IiNob3ctZGlmZmVyZW50LWJ1eS1zdHJhdGVneS1zZXR0aW5ncy1hZmZlY3QtdGhlLXBibCIsImNoaWxkcmVuIjpbXX0seyJ0aXRsZSI6IkhvdyBJbmRpY2F0b3JzIENvbmZpZ3VyYXRpb24gYWZmZWN0IHRoZSBQQkwiLCJhbmNob3IiOiIjaG93LWluZGljYXRvcnMtY29uZmlndXJhdGlvbi1hZmZlY3QtdGhlLXBibCIsImNoaWxkcmVuIjpbXX1dfV0=" :page-id="146" sidebar="W3siaSI6InNkaS0xIiwiayI6ImhlYWRlciIsImwiOiJTdXBwb3J0IiwiYyI6bnVsbCwieSI6bnVsbCwidCI6bnVsbH0seyJpIjoic2RpLTIiLCJrIjoibGluayIsImwiOiJEaXNjb3JkIENvbW11bml0eSIsImMiOiJmYXMgZmEtY29tbWVudHMiLCJ5IjoiZXh0ZXJuYWxibGFuayIsInQiOiJodHRwczovL2Rpc2NvcmQuZ2cvZWFrQjIzYiJ9LHsiaSI6InNkaS0zIiwiayI6ImRpdmlkZXIiLCJsIjpudWxsLCJjIjpudWxsLCJ5IjpudWxsLCJ0IjpudWxsfSx7ImkiOiJzZGktNCIsImsiOiJoZWFkZXIiLCJsIjoiR2V0dGluZyBTdGFydGVkIiwiYyI6bnVsbCwieSI6bnVsbCwidCI6bnVsbH0seyJpIjoic2RpLTUiLCJrIjoibGluayIsImwiOiJSZXF1aXJlbWVudHMiLCJjIjoiZmFyIGZhLWNoZWNrLWNpcmNsZSIsInkiOiJwYWdlIiwidCI6Ii9lbi9yZXF1aXJlbWVudHMifSx7ImkiOiJzZGktNiIsImsiOiJsaW5rIiwibCI6Ikluc3RhbGxhdGlvbiIsImMiOiJmYXMgZmEtdG9vbHMiLCJ5IjoicGFnZSIsInQiOiIvZW4vaW5zdGFsbGF0aW9uIn0seyJpIjoic2RpLTciLCJrIjoibGluayIsImwiOiJPdGhlciBTZXR1cCBHdWlkZXMiLCJjIjoibWRpLWZvbGRlciIsInkiOiJwYWdlIiwidCI6Ii9lbi9vdGhlcnNldHVwIn0seyJpIjoic2RpLTgiLCJrIjoibGluayIsImwiOiJVcGdyYWRlIiwiYyI6ImZhcyBmYS1hcnJvdy1hbHQtY2lyY2xlLXVwIiwieSI6InBhZ2UiLCJ0IjoiL2VuL3VwZ3JhZGUifSx7ImkiOiJzZGktOSIsImsiOiJsaW5rIiwibCI6IkZBUSIsImMiOiJmYSBmYS1xdWVzdGlvbiIsInkiOiJwYWdlIiwidCI6Ii9lbi9Db21tb24ifSx7ImkiOiJzZGktMTAiLCJrIjoiZGl2aWRlciIsImwiOm51bGwsImMiOm51bGwsInkiOm51bGwsInQiOm51bGx9LHsiaSI6InNkaS0xMSIsImsiOiJoZWFkZXIiLCJsIjoiQ29uZmlndXJhdGlvbiIsImMiOm51bGwsInkiOm51bGwsInQiOm51bGx9LHsiaSI6InNkaS0xMiIsImsiOiJsaW5rIiwibCI6IkNvbmZpZyIsImMiOiJmYXMgZmEtY29nIiwieSI6InBhZ2UiLCJ0IjoiL2VuL2NvbmZpZyJ9LHsiaSI6InNkaS0xMyIsImsiOiJsaW5rIiwibCI6IldlYiBJbnRlcmZhY2UgR3VpZGUiLCJjIjoibWRpLWNoZXZyb24tcmlnaHQiLCJ5IjoicGFnZSIsInQiOiIvZW4vd2ViaW50ZXJmYWNlZ3VpZGUifSx7ImkiOiJzZGktMTQiLCJrIjoiZGl2aWRlciIsImwiOm51bGwsImMiOm51bGwsInkiOm51bGwsInQiOm51bGx9LHsiaSI6InNkaS0xNSIsImsiOiJoZWFkZXIiLCJsIjoiVHJhZGluZyIsImMiOm51bGwsInkiOm51bGwsInQiOm51bGx9LHsiaSI6InNkaS0xNiIsImsiOiJsaW5rIiwibCI6IkJ1eSBhbmQgU2VsbCBMb2dpYyIsImMiOiJtZGktY2hldnJvbi1yaWdodCIsInkiOiJwYWdlIiwidCI6Ii9lbi9idXlhbmRzZWxsbG9naWMifSx7ImkiOiJzZGktMTciLCJrIjoibGluayIsImwiOiJCdXkgYW5kIFNlbGwgU3RyYXRlZ2llcyIsImMiOiJtZGktY2hldnJvbi1yaWdodCIsInkiOiJwYWdlIiwidCI6Ii9lbi9idXlzZWxsc3RyYXRlZ2llcyJ9LHsiaSI6InNkaS0xOCIsImsiOiJsaW5rIiwibCI6IkEgVHJhaWxpbmcgU3RvcnkiLCJjIjoibWRpLWNoZXZyb24tcmlnaHQiLCJ5IjoicGFnZSIsInQiOiIvZW4vYXRyYWlsaW5nc3RvcnkifSx7ImkiOiJzZGktMTkiLCJrIjoibGluayIsImwiOiJEQ0EgQnV5aW5nIiwiYyI6Im1kaS1jaGV2cm9uLXJpZ2h0IiwieSI6InBhZ2UiLCJ0IjoiL2VuL2RjYWJ1eWluZyJ9LHsiaSI6InNkaS0yMCIsImsiOiJsaW5rIiwibCI6IkEgU09NIFN0b3J5IiwiYyI6Im1kaS1jaGV2cm9uLXJpZ2h0IiwieSI6InBhZ2UiLCJ0IjoiL2VuL2Fzb21zdG9yeSJ9LHsiaSI6InNkaS0yMSIsImsiOiJsaW5rIiwibCI6IkV4Y2hhbmdlIEluZm8iLCJjIjoibWRpLWNoZXZyb24tcmlnaHQiLCJ5IjoicGFnZSIsInQiOiIvZW4vZXhjaGFuZ2VpbmZvIn0seyJpIjoic2RpLTIyIiwiayI6ImRpdmlkZXIifV0=" nav-mode="MIXED" effective-permissions="eyJjb21tZW50cyI6eyJyZWFkIjpmYWxzZSwid3JpdGUiOmZhbHNlLCJtYW5hZ2UiOmZhbHNlfSwiaGlzdG9yeSI6eyJyZWFkIjpmYWxzZX0sInNvdXJjZSI6eyJyZWFkIjpmYWxzZX0sInBhZ2VzIjp7InJlYWQiOnRydWUsIndyaXRlIjpmYWxzZSwibWFuYWdlIjpmYWxzZSwiZGVsZXRlIjpmYWxzZSwic2NyaXB0IjpmYWxzZSwic3R5bGUiOmZhbHNlfSwic3lzdGVtIjp7Im1hbmFnZSI6ZmFsc2V9fQ=="><template slot="contents"><div><h1 class="toc-header" id="basic-buying-and-selling-guide-to-profittrailer"><a href="#basic-buying-and-selling-guide-to-profittrailer" class="toc-anchor">¶</a> BASIC BUYING AND SELLING GUIDE TO PROFITTRAILER</h1><div>
+</div><h2 class="toc-header" id="buy-using-multiple-indicators"><a href="#buy-using-multiple-indicators" class="toc-anchor">¶</a> BUY USING MULTIPLE INDICATORS</h2><div>
+</div><p>ProfitTrailer has the ability to buy and sell with multiple strategies/indicators being used at the same time. With multiple strategies, you are able to look at different aspects of the trend of a coin before deciding if you should buy or sell. Combining these strategies properly can improve your profitability by a large margin vs using a single strategy.</p><div>
+</div><p>For example, several good indicator pairings are: LOWBB and RSI for buying, HIGHBB and RSI for selling, LOWBB and STOCH, HIGHBB and STOCH, etc.</p><div>
+</div><p>Combining the strategies would look like the following example (using LOWBB and STOCH for example):</p><div>
+</div><pre class="prismjs line-numbers"><code class="language-">DEFAULT_A_buy_strategy = LOWBB
+DEFAULT_A_buy_value = 0            - will become true when LOWBB is &lt;= 0
+DEFAULT_A_buy_value_limit = -10    - and will remain true while LOWBB is &gt;= -10
+
+#Note that the second strategy uses  "B" instead of "A". 
+#You can have 26 strategies used at one time, so A through Z. They do not need to be consecutive.
+DEFAULT_B_buy_strategy = STOCH
+DEFAULT_B_buy_value = 20          - will become true when STOCH &lt;= 20
+DEFAULT_B_buy_value_limit = 1     - and will remain true while STOCH &gt;= 1
+</code></pre><div>
+</div><h3 class="toc-header" id="type-matters"><a href="#type-matters" class="toc-anchor">¶</a> TYPE MATTERS</h3><div>
+</div><p>There are 4 main types of technical indicators: Trend, Momentum, Volatility, and Volume. The indicators in PT fall into these types as shown in the table below.</p><div>
+</div><table style="border-collapse: collapse; text-align: left; margin: 10px 0px; width: 98%;">
+  <tbody><tr style="background-color: rgb(249, 249, 249); border-top: 1px solid rgb(221, 221, 221);">
+    <td style="font-weight: bold;">Trend</td><td>SMA, EMA, MACD</td>
+  </tr>
+  <tr style="border-top: 1px solid rgb(221, 221, 221);">
+    <td style="font-weight: bold;">Momentum</td><td>RSI, STOCH</td>
+  </tr>
+  <tr style="background-color: rgb(249, 249, 249); border-top: 1px solid rgb(221, 221, 221);">
+    <td style="font-weight: bold;">Volatility</td><td>Bollinger Bands</td>
+  </tr>
+  <tr style="border-top: 1px solid rgb(221, 221, 221);">
+    <td style="font-weight: bold;">Volume</td><td>OBV</td>
+  </tr>
+</tbody></table><div>
+While you can do your own research on this topic, it is important to note that you should not try to combine strategies that are of the same type, as this creates the situation where you are getting confirmation from multiple indicators but they are all measuring the same thing.
+</div><h2 class="toc-header" id="understanding-the-buy"><a href="#understanding-the-buy" class="toc-anchor">¶</a> UNDERSTANDING THE BUY</h2><div>
+</div><p>There are several factors that determine when a bot buys or sells. These are all set in the 3 main configuration GUI sections that deal with your buying and selling strategies: Indicators, Pairs, and DCA.</p><div>
+</div><h3 class="toc-header" id="pairs-buying"><a href="#pairs-buying" class="toc-anchor">¶</a> PAIRS BUYING</h3><div>
+</div><p>Pairs settings drive the standard, non-DCA (Dollar Cost Averaging) buying. These settings are used when the coin doesn’t enter DCA or you are not using DCA.</p><div>
+</div><h4 class="toc-header" id="possible-buy-log"><a href="#possible-buy-log" class="toc-anchor">¶</a> Possible Buy Log</h4><div>
+</div><p>First, let’s discuss buying. The Possible Buy Log (PBL) is your indicator that your buy strategy is picking up potential candidates to buy. The different settings in the 3 GUI sections mentioned above control how the bot evaluates candidates. When you understand how you can enhance those settings, you will understand how to make the bot perform with more profitable behavior.</p><div>
+</div><p>When the PBL filters out coins based on these settings, any of these conditions will prevent a coin from appearing in the PBL:</p><div>
+</div><ul>
+<li>min_buy_volume is not met</li>
+<li>min_buy_price is not met</li>
+<li>trading_enabled is false</li>
+<li>Already own the coin</li>
+<li>hidden_pairs will not be shown</li>
+</ul><div>
+</div><p>The PBL will look for ALL the buy strategies that you have set to be true before it will begin to consider buying a coin. The exception to this is the default_buy_strategy_formula setting, which allows any valid combination of strategies to be true in order to consider a buy. Then it will begin trailing if you have trailing set. As you can see, there are even more hurdles to leap over before the bot will buy, which of course, is a good thing. The more criteria your buy meets, the better the buy should be to try to create an opportunity to create a profit in the future from that purchase.</p><div>
+</div><p>You can choose to make the bot buy very quickly by creating very loose and aggressive buy settings, but remember that is defeating the purpose of being selective, and using a bot that can do all these calculations and checks for you without emotion.</p><div>
+</div><h4 class="toc-header" id="the-main-setting-buy_value"><a href="#the-main-setting-buy_value" class="toc-anchor">¶</a> The Main Setting: buy_value</h4><div>
+</div><pre class="prismjs line-numbers"><code class="language-">DEFAULT_A_buy_value
+</code></pre><div>
+</div><p>The main way to get the bot to buy, especially when you just want to make sure it is working, is to manipulate the DEFAULT_A_buy_value setting along with your DEFAULT_A_buy_strategy.</p><div>
+</div><p>For example, if you want a simple buy strategy that is easy to understand, you can use LOWBB. This strategy says “buy a coin when its price meets or is lower than the LOWBB value of the coin, adjusted by the DEFAULT_A_buy_value percentage.” The DEFAULT_A_buy_value default is 0, meaning buy the coin when the price is the same or lower than the LOWBB value.</p><div>
+</div><p>But let’s say the market is hot, and all the coins are seeing strong gains. The price of a coin may rarely reach the LOWBB value, so you will want to increase the DEFAULT_A_buy_value to move the buy signal higher. You can do that by increasing the DEFAULT_A_buy_value a few percent at a time until you see the bot starting to buy. If you move the value to 15, you are telling the bot to buy a coin when its price is 15% ABOVE the LOWBB value.</p><div>
+</div><p>(Remember that with LOWBB, a DEFAULT_A_buy_value = 50 means the middle of the BB bands (50%), and 100 means you would be at the HIGHBB band. So, the maximum that you would use in DEFAULT_A_buy_value would be 45%. This would be a very aggressive setting and should result in the bot buying many pairs. This is, however, not necessarily a good thing, but it gives you an example with which to work.)</p><div>
+</div><p>Alternatively, if the market is down, and the coins have negative 24 hour averages, you would want to set your DEFAULT_A_buy_value to a number that is low, even below zero, like -5, -10, -15, -20. This says “do not buy until the price of the coin is 5% (10%, etc) BELOW the LOWBB value.</p><div>
+</div><pre class="prismjs line-numbers"><code class="language-">DEFAULT_trailing_buy
+</code></pre><div>
+</div><p>Another important setting is the <code>DEFAULT_trailing_buy</code> setting. This setting allows the bot to “trail” a price downward if it is not yet done dropping, to try and buy the coin at the lowest possible price it can. This action is why you sometimes don’t see the bot buy immediately when a price is below the LOWBB setting by your DEFAULT_A_buy_value percentage. Sometimes, it buys at a really low price for you, yaaa! But sometimes, if the price turns back up, it might not buy at all if the price jumps above the DEFAULT_A_buy_value setting. It can be confusing, but it is working in your favor.</p><div>
+</div><blockquote class="is-warning">
+<p>There are several other settings detailed in the sections below that will cause the bot to filter out certain purchases that might meet the price triggers. These include: having enough volume, having a small enough spread, having too many pairs already bought but not sold beyond your max pairs setting, etc. Be sure to read and understand how these settings affect the buying below.</p>
+</blockquote><div>
+</div><p>Understanding this basic concept of how the buy strategy and DEFAULT_A_buy_value work together, will help you conquer the crypto markets!</p><div>
+</div><h3 class="toc-header" id="dca-buying"><a href="#dca-buying" class="toc-anchor">¶</a> DCA BUYING</h3><div>
+</div><p>But wait, there's more! PT has a buying strategy that helps you if your coin purchase begins to drop in value. It is called Dollar Cost Averaging or DCA for short, and will buy more coins for you as the price drops in order to lower the average price that you must meet in order to sell for a profit, or to prevent a loss.</p><div>
+</div><p>DCA is detailed in the dca_config section, but there are a couple of basic concepts to understand here.</p><div>
+</div><pre class="prismjs line-numbers"><code class="language-">DEFAULT_DCA_enabled
+</code></pre><div>
+</div><p>The first thing to understand is that you can turn DCA on in the Pairs file with the <code>DEFAULT_DCA_enabled = true</code> setting, or you can also use a percentage drop at which to send the pairs to the DCA log using <code>DEFAULT_DCA_enabled = -2</code> (send the coins to DCA when they drop 2% in price), or turn it off with “false”. It is probably best to turn it off at first.</p><div>
+</div><p>When you turn it on, you need to understand that DCA can use a lot of your balance in a hurry if you have bought coins at too high a price and they begin to drop in value.</p><div>
+</div><p>The amount of the coin being purchased in each DCA cycle can be set for each subsequent purchase using DCA level specific settings! By default the amount of coin to be purchased (<code>DEFAULT_DCA_buy_percentage</code>) is normally 100% of the current amount of the coin you hold. DCA purchasing can use a large amount of your balance very quickly, so you need to understand how to use and control it.</p><div>
+</div><p>Example. If you have bought 0.002 BTC worth of ETH, and you let it DCA, the bot will purchase the following amounts, assuming that you have it set to buy 100% each time:</p><div>
+</div><p>Initial Balance is 0.002,<br>
+1st DCA = 0.002, Total = 0.004 BTC<br>
+2nd DCA = 0.004, Total = 0.008 BTC<br>
+3rd DCA = 0.008, Total = 0.016 BTC<br>
+4th DCA = 0.016, Total = 0.032 BTC<br>
+5th DCA = 0.032, Total = 0.064 BTC<br>
+6TH DCA = 0.064, Total = 0.128 BTC</p><div>
+</div><p>As you can see, within 6 purchases you went from a 0.002 initial buy to a 0.128 holding in a coin that is clearly still down below your purchase price. Be sure to read the dca_config wiki entry and use the settings that are there to limit how much DCA can use of your balance (max_cost, max_buy_times).</p><div>
+</div><p>That said, it is a very effective tool to help you clear out your bags if you set it up properly so don't be afraid of it, but take the time to understand fully how the DCA system works.</p><div>
+</div><p>Your goal in DCA is to get the average purchase price of the coin lower, so that when the price begins to go up, you reach a profitable price faster so that you can get rid of the coin without a loss. To do this, some people create very loose or aggressive buy settings so that the bot will buy fast if the coin is dropping. Others believe it is better to wait for the coin to drop and then stabilize before buying. There is not a lot of definitive data on which way works better, so experiment and research this topic before deciding on a strategy.</p><div>
+</div><p>For more advanced information on DCA buying see <a class="is-internal-link is-valid-page" href="/en/dcabuying">DCA Buying</a></p><div>
+</div><h2 class="toc-header" id="understanding-the-sell"><a href="#understanding-the-sell" class="toc-anchor">¶</a> UNDERSTANDING THE SELL</h2><div>
+</div><p>The sell is just like the buy, and like the buy, can happen in two places: the Pairs side of the bot, and in the DCA side. The sell is driven by default, with a simple GAIN strategy. If you want to try to get more profit from your sells, you can use multiple strategies coupled together to try to ensure the price of the coin is at a true “high” point before selling. Remember that with multiple strategies for selling, if you choose to not use GAIN as a sell strategy, your sell settings could potentially sell the coins for a loss! It's probably best at the start if you use GAIN as one of the sell strategies and set the minimum % profit gain.</p><div>
+</div><p>If however you are using multiple strategies, like GAIN, HIGHBB and RSI together, then all 3 of those strategies must evaluate to true before the bot will begin to try to sell. The exception to this is the <code>default_sell_strategy_formula</code> which will use any valid combination of strategies that must evaluate as true. Then, if you are also using trailing_profit settings, the bot will begin to trail instead of simply selling.</p><div>
+</div><h3 class="toc-header" id="pairs-selling"><a href="#pairs-selling" class="toc-anchor">¶</a> PAIRS SELLING</h3><div>
+</div><pre class="prismjs line-numbers"><code class="language-">DEFAULT_A_sell_value
+</code></pre><div>
+</div><p>For the strategy being used, this is the value to be used for the comparison to see if the strategy is true or not.</p><div>
+</div><p>For example, with the GAIN strategy, this is the amount of profit you wish to see before the bot turns this strategy true. It is true when the price of the coin exceeds the bought price average by the amount indicated. For The actual setting is found in the Pairs config GUI.</p><div>
+</div><p>Another example would be with RSI, the sell_value property would be the RSI level to attain before the RSI strategy is set to true.</p><div>
+</div><pre class="prismjs line-numbers"><code class="language-">DEFAULT_trailing_profit
+</code></pre><div>
+</div><p>But, there is a twist! Before executing the sell, the DEFAULT_trailing_profit setting will attempt to allow the bot to work the price upward if it is still going up before it sells. Like the DEFAULT_A_trailing_buy setting above, the profit setting tries to maximize your gains. You can read a Trailing scenario here in A Trailing Story.</p><div>
+</div><h3 class="toc-header" id="dca-selling"><a href="#dca-selling" class="toc-anchor">¶</a> DCA SELLING</h3><div>
+</div><p>Selling in DCA is similar to selling in Pairs. It can use any combination of valid strategies, and has the normal sell parameters already discussed in Pairs. Remember, they can be set differently than what you have in Pairs, and probably <strong>should</strong> be different.</p><div>
+</div><p>Example - when you have a coin that has gone down in value, it is often wise to set the sell_value to a lower value than for a coin that you bought and never went down in price and thus never entered DCA. A coin that has been held at a loss is tying up your balance, and is not making you money. You may wish to get out of it quickly and at a lower profit margin than a purchase that is skyrocketing.</p><div>
+</div><p>Remember: Your goal should NOT be to make the highest profit on each trade. On the contrary, your goal should be to NOT lose money in trading.</p><div>
+</div><h3 class="toc-header" id="reversal-trading"><a href="#reversal-trading" class="toc-anchor">¶</a> REVERSAL TRADING</h3><div>
+</div><p>Reversal trading is a tool that seeks to intentionally sell a pair at a loss and then later rebuy a higher amount of the same pair at the same reserved balance amount.<br>
+Here is the process:</p><div>
+</div><ol class="is-warning">
+<li>All Trigger values are relative to the average price for the coin.</li>
+<li>Using the <code>reversal_start_trigger</code> the coin is sold and moved to the reversal coins log.<br>
+a. The amount needed to rebuy the reversal is also reserved and will be shown in the monitoring page in the first row, first box.</li>
+<li>If the coin falls to the <code>reversal_rebuy_drop_trigger</code> percentage that has been set, then the coin will be re-bought.<br>
+a. This effectively uses the same amount of balance to rebuy more of the coin.</li>
+<li>If the coin rises instead to the reversal_rebuy_rise_trigger percentage, the coin will be re-bought.
+<blockquote>
+<p>a. The <code>reversal_rebuy_rise_trigger</code> is optional and while valid it will rebuy the coin in an effort to still make profit on the sale of a rising coin percentage but it is a risky move because now you have a lower amount of coins than when you started.</p>
+</blockquote>
+</li>
+</ol><div>
+</div><p>After a rebuy the REVERSALGAIN strategy will appear as a sell strategy. It will replace GAIN if used.</p><div>
+</div><p>REVERSALGAIN is calculated as the profit needed to reach the breakeven point using the cost paid vs amount of coins we currently own</p><div>
+</div><pre class="prismjs line-numbers"><code class="language-">reversalGainPrice = Initial total cost / current total amount of coins
+
+reversal GAIN P%= ((highestbid / reversalGainPrice ) - 1) * 100
+</code></pre><div>
+</div><p>Here is a graphic to help understand the trade flow:<br>
+<img alt="reversal_graphic.png" src="/reversal_graphic.png"></p><div>
+</div><h2 class="toc-header" id="detailed-pbl-explanation"><a href="#detailed-pbl-explanation" class="toc-anchor">¶</a> DETAILED PBL EXPLANATION</h2><div>
+</div><p>Why is my bot not buying? Why won't it sell? Why are there things in my Possible Buy Log (PBL), but it's not buying? Why is my PBL empty?</p><div>
+</div><p>The PBL is populated based on several settings in your Pairs config GUI and Indicators config GUI. One of the main factors in buying is:</p><div>
+</div><pre class="prismjs line-numbers"><code class="language-">Your Balance or your TCV (Total Current Value)
+</code></pre><div>
+</div><p>A zero or too low of a balance in your exchange and/or a TCV of zero will cause the coins in the PBL to display INSUFFICIENT BALANCE below the buy settings. Additionally, if your balance is lower than your <code>DEFAULT_initial_cost</code> setting for the Pairs config GUI, or the <code>DEFAULT_DCA_max_cost</code> setting in your DCA config GUI, then the bot won't be able to buy.</p><div>
+</div><p>Other factors that affect the buying activity are broken down by file:</p><div>
+</div><h3 class="toc-header" id="pairs-configuration"><a href="#pairs-configuration" class="toc-anchor">¶</a> Pairs Configuration:</h3><div>
+</div><p>Settings that affect buying:</p><div>
+</div><pre class="prismjs line-numbers"><code class="language-">DEFAULT_trading_enabled = true
+</code></pre><div>
+</div><p>If this is “false” the bot will not populate the PBL</p><div>
+</div><hr><div>
+</div><pre class="prismjs line-numbers"><code class="language-">DEFAULT_sell_only_mode = false
+</code></pre><div>
+</div><p>If this is “true” the bot will populate the PBL but the coin will show a SOM underneath its buy settings.</p><div>
+</div><hr><div>
+</div><pre class="prismjs line-numbers"><code class="language-">max_trading_pairs
+</code></pre><div>
+</div><p>If the coin pairs in the Pairs log + the DCA log = max_trading_pairs, then all PBL pairs will show MAX PAIRS under the buy settings. If you want to buy more pairs increase this number.</p><div>
+</div><hr><div>
+</div><pre class="prismjs line-numbers"><code class="language-">DEFAULT_min_buy_volume = 500
+</code></pre><div>
+</div><p>If the volume in the base currency that you are using to trade (e.g. BTC, or USDT) is below the amount you set, the pair will not be included in the PBL. This keeps you from buying coins that are hard to get rid of when the price is fluctuating wildly due to low trading volume. You can't sell a coin if there is no one on the other side to buy it at your desired price. Having very low volume makes that problem more severe.</p><div>
+</div><hr><div>
+</div><pre class="prismjs line-numbers"><code class="language-">DEFAULT_min_buy_price = 0.00000500
+</code></pre><div>
+</div><p>If the price of the pair is below this minimum price, the pair will not be included in the PBL.</p><div>
+</div><h2 class="toc-header" id="how-different-buy-strategy-settings-affect-the-pbl"><a href="#how-different-buy-strategy-settings-affect-the-pbl" class="toc-anchor">¶</a> How different BUY strategy settings affect the PBL</h2><div>
+</div><p>Understanding the PBL (Possible Buy Log) and how different buy strategies affect it is key to understanding the bot.<br>
+<a class="is-internal-link is-valid-page" href="/en/buysellstrategies">Follow this link</a> for detailed explanations of all possible strategies.</p><div>
+</div><h2 class="toc-header" id="how-indicators-configuration-affect-the-pbl"><a href="#how-indicators-configuration-affect-the-pbl" class="toc-anchor">¶</a> How Indicators Configuration affect the PBL</h2><div>
+</div><p>The following settings affect the PBL:</p><div>
+</div><p>All of the items in the indicators config GUI affect the PBL. As you change the settings, they either make the reactions of the bot more or less aggressive. Basically, the longer the period, or the length, or the amount of time for the signal settings, the less aggressive/more conservative the bot will be. The opposite is true when the settings are shorter - the bot will calculate values with more volatility and thus the bot will react more aggressively.</p><div>
+</div><p>Smoother is better, but there are recommended settings that are the “sweet” spot for most of these strategies. If you are not sure, use the default. Looking up these strategies on the popular investing education websites will normally discuss in much better detail how to change the length of these settings in different situations.</p><div>
+</div><p>Look to sites like <a class="is-external-link" href="http://Investopedia.com">Investopedia.com</a>, <a class="is-external-link" href="http://StockCharts.com">StockCharts.com</a>, and <a class="is-external-link" href="http://BabyPips.com">BabyPips.com</a> for good guidance. Many others exist as well.</p><div>
+</div></div></template><template slot="comments"><div><comments></comments></div></template></page></div></body></html>
