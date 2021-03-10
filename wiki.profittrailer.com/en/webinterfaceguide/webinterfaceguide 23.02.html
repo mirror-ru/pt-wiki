@@ -1,0 +1,647 @@
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta charset="UTF-8"><meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1, maximum-scale=5"><meta name="theme-color" content="#1976d2"><meta name="msapplication-TileColor" content="#1976d2"><meta name="msapplication-TileImage" content="/_assets/favicons/mstile-150x150.png"><title>Web Interface Guide | ProfitTrailer Wiki</title><meta name="description" content=""><meta property="og:title" content="Web Interface Guide"><meta property="og:type" content="website"><meta property="og:description" content=""><meta property="og:image"><meta property="og:url" content="https://wiki.profittrailer.com/en/webinterfaceguide"><meta property="og:site_name" content="ProfitTrailer Wiki"><link rel="apple-touch-icon" sizes="180x180" href="/_assets/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="192x192" href="/_assets/favicons/android-chrome-192x192.png"><link rel="icon" type="image/png" sizes="32x32" href="/_assets/favicons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/_assets/favicons/favicon-16x16.png"><link rel="mask-icon" href="/_assets/favicons/safari-pinned-tab.svg" color="#1976d2"><link rel="manifest" href="/_assets/manifest.json"><script>var siteConfig = {"title":"ProfitTrailer Wiki","theme":"default","darkMode":false,"lang":"en","rtl":false,"company":"ProfitTrailer B.V.","contentLicense":"","logoUrl":"/logo-trans-small.png"}
+var siteLangs = [{"code":"en","name":"English"}]
+</script><link type="text/css" rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css"><link type="text/css" rel="stylesheet" href="/_assets/css/app.1be885be7b290bb7c8bc.css"><script type="text/javascript" src="/_assets/js/runtime.js?1601761667"></script><script type="text/javascript" src="/_assets/js/app.js?1601761667"></script></head><body><div id="root"><page locale="en" path="webinterfaceguide" title="Web Interface Guide" description="" :tags="[]" created-at="2020-08-22T09:42:28.487Z" updated-at="2021-01-29T10:48:22.266Z" author-name="Administrator" :author-id="1" :is-published="true" toc="W3sidGl0bGUiOiJDb21tb24gQXJlYXMiLCJhbmNob3IiOiIjY29tbW9uLWFyZWFzIiwiY2hpbGRyZW4iOltdfSx7InRpdGxlIjoiRGFzaGJvYXJkIC8gTW9uaXRvcmluZyBwYWdlIiwiYW5jaG9yIjoiI2Rhc2hib2FyZC1tb25pdG9yaW5nLXBhZ2UiLCJjaGlsZHJlbiI6W119LHsidGl0bGUiOiJQb3NzaWJsZSBidXkgdGFiIChQQkwpIiwiYW5jaG9yIjoiI3Bvc3NpYmxlLWJ1eS10YWItcGJsIiwiY2hpbGRyZW4iOlt7InRpdGxlIjoiUG9zc2libGUgYmxvY2sgcmVhc29uczoiLCJhbmNob3IiOiIjcG9zc2libGUtYmxvY2stcmVhc29ucyIsImNoaWxkcmVuIjpbXX1dfSx7InRpdGxlIjoiUGFpcnMgdGFiIiwiYW5jaG9yIjoiI3BhaXJzLXRhYiIsImNoaWxkcmVuIjpbXX0seyJ0aXRsZSI6IkRDQSB0YWIiLCJhbmNob3IiOiIjZGNhLXRhYiIsImNoaWxkcmVuIjpbeyJ0aXRsZSI6IlBvc3NpYmxlIGJsb2NrIHJlYXNvbnM6IiwiYW5jaG9yIjoiI3Bvc3NpYmxlLWJsb2NrLXJlYXNvbnMtMSIsImNoaWxkcmVuIjpbXX1dfSx7InRpdGxlIjoiUGVuZGluZyB0YWIiLCJhbmNob3IiOiIjcGVuZGluZy10YWIiLCJjaGlsZHJlbiI6W119LHsidGl0bGUiOiJCdXkgaGlzdG9yeSB0YWIiLCJhbmNob3IiOiIjYnV5LWhpc3RvcnktdGFiIiwiY2hpbGRyZW4iOltdfSx7InRpdGxlIjoiU2VsbCBoaXN0b3J5IHRhYiIsImFuY2hvciI6IiNzZWxsLWhpc3RvcnktdGFiIiwiY2hpbGRyZW4iOltdfSx7InRpdGxlIjoiTWlzYyBDb2lucyB0YWIiLCJhbmNob3IiOiIjbWlzYy1jb2lucy10YWIiLCJjaGlsZHJlbiI6W119LHsidGl0bGUiOiJDb25maWcgdGFiIiwiYW5jaG9yIjoiI2NvbmZpZy10YWIiLCJjaGlsZHJlbiI6W3sidGl0bGUiOiJIb3QgQ29uZmlnIiwiYW5jaG9yIjoiI2hvdC1jb25maWciLCJjaGlsZHJlbiI6W119XX0seyJ0aXRsZSI6IlN0YXRzIFBhZ2UiLCJhbmNob3IiOiIjc3RhdHMtcGFnZSIsImNoaWxkcmVuIjpbXX0seyJ0aXRsZSI6IkFkdmFuY2VkIFN0YXRpc3RpY3MiLCJhbmNob3IiOiIjYWR2YW5jZWQtc3RhdGlzdGljcyIsImNoaWxkcmVuIjpbXX0seyJ0aXRsZSI6IkFjY291bnQgc2V0dGluZ3MiLCJhbmNob3IiOiIjYWNjb3VudC1zZXR0aW5ncyIsImNoaWxkcmVuIjpbXX1d" :page-id="191" sidebar="W3siaSI6InNkaS0xIiwiayI6ImhlYWRlciIsImwiOiJTdXBwb3J0In0seyJpIjoic2RpLTIiLCJrIjoibGluayIsImwiOiJEaXNjb3JkIENvbW11bml0eSIsImMiOiJmYXMgZmEtY29tbWVudHMiLCJ5IjoiZXh0ZXJuYWxibGFuayIsInQiOiJodHRwczovL2Rpc2NvcmQuZ2cvZWFrQjIzYiJ9LHsiaSI6InNkaS0zIiwiayI6ImRpdmlkZXIifSx7ImkiOiJzZGktNCIsImsiOiJoZWFkZXIiLCJsIjoiR2V0dGluZyBTdGFydGVkIiwiYyI6bnVsbCwieSI6bnVsbCwidCI6bnVsbH0seyJpIjoic2RpLTUiLCJrIjoibGluayIsImwiOiJSZXF1aXJlbWVudHMiLCJjIjoiZmFyIGZhLWNoZWNrLWNpcmNsZSIsInkiOiJwYWdlIiwidCI6Ii9lbi9yZXF1aXJlbWVudHMifSx7ImkiOiJzZGktNiIsImsiOiJsaW5rIiwibCI6Ikluc3RhbGxhdGlvbiIsImMiOiJmYXMgZmEtdG9vbHMiLCJ5IjoicGFnZSIsInQiOiIvZW4vaW5zdGFsbGF0aW9uIn0seyJpIjoic2RpLTciLCJrIjoibGluayIsImwiOiJPdGhlciBTZXR1cCBHdWlkZXMiLCJjIjoibWRpLWZvbGRlciIsInkiOiJwYWdlIiwidCI6Ii9lbi9vdGhlcnNldHVwIn0seyJpIjoic2RpLTgiLCJrIjoibGluayIsImwiOiJVcGdyYWRlIiwiYyI6ImZhcyBmYS1hcnJvdy1hbHQtY2lyY2xlLXVwIiwieSI6InBhZ2UiLCJ0IjoiL2VuL3VwZ3JhZGUifSx7ImkiOiJzZGktOSIsImsiOiJsaW5rIiwibCI6IkZBUSIsImMiOiJmYSBmYS1xdWVzdGlvbiIsInkiOiJwYWdlIiwidCI6Ii9lbi9Db21tb24ifSx7ImkiOiJzZGktMTAiLCJrIjoiZGl2aWRlciIsImwiOm51bGwsImMiOm51bGwsInkiOm51bGwsInQiOm51bGx9LHsiaSI6InNkaS0xMSIsImsiOiJoZWFkZXIiLCJsIjoiQ29uZmlndXJhdGlvbiIsImMiOm51bGwsInkiOm51bGwsInQiOm51bGx9LHsiaSI6InNkaS0xMiIsImsiOiJsaW5rIiwibCI6IkNvbmZpZyIsImMiOiJmYXMgZmEtY29nIiwieSI6InBhZ2UiLCJ0IjoiL2VuL2NvbmZpZyJ9LHsiaSI6InNkaS0xMyIsImsiOiJsaW5rIiwibCI6IldlYiBJbnRlcmZhY2UgR3VpZGUiLCJjIjoibWRpLWNoZXZyb24tcmlnaHQiLCJ5IjoicGFnZSIsInQiOiIvZW4vd2ViaW50ZXJmYWNlZ3VpZGUifSx7ImkiOiJzZGktMTQiLCJrIjoiZGl2aWRlciIsImwiOm51bGwsImMiOm51bGwsInkiOm51bGwsInQiOm51bGx9LHsiaSI6InNkaS0xNSIsImsiOiJoZWFkZXIiLCJsIjoiVHJhZGluZyIsImMiOm51bGwsInkiOm51bGwsInQiOm51bGx9LHsiaSI6InNkaS0xNiIsImsiOiJsaW5rIiwibCI6IkJ1eSBhbmQgU2VsbCBMb2dpYyIsImMiOiJtZGktY2hldnJvbi1yaWdodCIsInkiOiJwYWdlIiwidCI6Ii9lbi9idXlhbmRzZWxsbG9naWMifSx7ImkiOiJzZGktMTciLCJrIjoibGluayIsImwiOiJCdXkgYW5kIFNlbGwgU3RyYXRlZ2llcyIsImMiOiJtZGktY2hldnJvbi1yaWdodCIsInkiOiJwYWdlIiwidCI6Ii9lbi9idXlzZWxsc3RyYXRlZ2llcyJ9LHsiaSI6InNkaS0xOCIsImsiOiJsaW5rIiwibCI6IkEgVHJhaWxpbmcgU3RvcnkiLCJjIjoibWRpLWNoZXZyb24tcmlnaHQiLCJ5IjoicGFnZSIsInQiOiIvZW4vYXRyYWlsaW5nc3RvcnkifSx7ImkiOiJzZGktMTkiLCJrIjoibGluayIsImwiOiJEQ0EgQnV5aW5nIiwiYyI6Im1kaS1jaGV2cm9uLXJpZ2h0IiwieSI6InBhZ2UiLCJ0IjoiL2VuL2RjYWJ1eWluZyJ9LHsiaSI6InNkaS0yMCIsImsiOiJsaW5rIiwibCI6IkEgU09NIFN0b3J5IiwiYyI6Im1kaS1jaGV2cm9uLXJpZ2h0IiwieSI6InBhZ2UiLCJ0IjoiL2VuL2Fzb21zdG9yeSJ9LHsiaSI6InNkaS0yMSIsImsiOiJsaW5rIiwibCI6IkV4Y2hhbmdlIEluZm8iLCJjIjoibWRpLWNoZXZyb24tcmlnaHQiLCJ5IjoicGFnZSIsInQiOiIvZW4vZXhjaGFuZ2VpbmZvIn1d" nav-mode="MIXED" effective-permissions="eyJjb21tZW50cyI6eyJyZWFkIjpmYWxzZSwid3JpdGUiOmZhbHNlLCJtYW5hZ2UiOmZhbHNlfSwiaGlzdG9yeSI6eyJyZWFkIjpmYWxzZX0sInNvdXJjZSI6eyJyZWFkIjpmYWxzZX0sInBhZ2VzIjp7InJlYWQiOnRydWUsIndyaXRlIjpmYWxzZSwibWFuYWdlIjpmYWxzZSwiZGVsZXRlIjpmYWxzZSwic2NyaXB0IjpmYWxzZSwic3R5bGUiOmZhbHNlfSwic3lzdGVtIjp7Im1hbmFnZSI6ZmFsc2V9fQ=="><template slot="contents"><div><blockquote class="is-success">
+<p>This guide will provide information on everything that you see in the web GUI.<br>
+With default settings you can access the GUI when the bot is running by visiting <a class="is-external-link" href="http://localhost:8081">http://localhost:8081</a> on the same computer as the bot.<br>
+If you are still in the setup process see the <a class="is-internal-link is-valid-page" href="/en/initial_setup">Initial Setup Guide</a>.</p>
+</blockquote><div>
+</div><h2 class="toc-header" id="common-areas"><a href="#common-areas" class="toc-anchor">¶</a> Common Areas</h2><div>
+</div><p>These sections are visible on every page of the GUI.<br>
+<img alt="monitoring_header.png" src="/webinterfaceguide/monitoring_header.png"></p><div>
+</div><p>Along the very top row you'll see the following information.</p><div>
+</div><p><code>BAL (Balance)</code> - The amount of your chosen market currency you have available in your exchange wallet.</p><div>
+</div><p><code>TCV (Total Current Value)</code> - The current value of your coins. It's the sum of your BAL (balance) and the actual value of your coins on the market (it's how much you could get if you sold them at the top bid price right now). This includes the sum of your current values in Pairs Log plus DCA Log plus Dust Log to calculate the TCV.</p><div>
+</div><p><code>Profit</code> - The amount you earned within the last week (LW), yesterday (YD) and today (TD) displayed in your chosen market currency rounded to 3 decimal places.</p><div>
+</div><p><code>Trend</code> - The percentage trend of your MARKET during the last 24 hours (samples top 20 coins).</p><div>
+</div><p><code>MARKET (BTC, ETH, etc)</code> - The current price of the market currency you chose and its % trend compared to USD over 24 hours.</p><div>
+</div><p><code>Config Selector</code> - A dropdown selector box to choose the active config. <img alt="config_select.png" src="/webinterfaceguide/config_select.png"></p><div>
+</div><p><code>Test Mode</code> - When in test mode you will see this red indicator in the header. <img alt="testmode.png" src="/webinterfaceguide/testmode.png"></p><div>
+</div><p>Along the bottom of the header you have links to all the pages in the GUI. The number will change to <span style="color:red;">RED</span> when it has changed.</p><div>
+</div><p><strong>Click on the image below to view each section.</strong><br>
+<img alt="menu_monitoring.png" src="/webinterfaceguide/menu_monitoring.png"><img alt="menu_possible_buy_log.png" src="/webinterfaceguide/menu_possible_buy_log.png"><img alt="menu_pairs_log.png" src="/webinterfaceguide/menu_pairs_log.png"><img alt="menu_dca_log.png" src="/webinterfaceguide/menu_dca_log.png"><img alt="menu_pending_log.png" src="/webinterfaceguide/menu_pending_log.png"><img alt="menu_buy_log.png" src="/webinterfaceguide/menu_buy_log.png"><img alt="menu_sales_log.png" src="/webinterfaceguide/menu_sales_log.png"><img alt="menu_misc.png" src="/webinterfaceguide/menu_misc.png"><img alt="menu_config.png" src="/webinterfaceguide/menu_config.png"><img alt="menu_stats.png" src="/webinterfaceguide/menu_stats.png"><img alt="news_subs_button.png" src="/webinterfaceguide/news_subs_button.png"><br>
+(<strong>Note:</strong> Stats page is only available to Pro/Advanced license holders)</p><div>
+</div><p><img alt="cog_settings.png" src="/webinterfaceguide/cog_settings.png"><br>
+The green/yellow dot indicates the status of the data cycle. Yellow indicates it is refreshing and gathering the latest data from the exchange. Green indicates it successfully retrieved the data a short time ago. You should see a yellow refresh every 5 seconds or less.</p><div>
+</div><p>The cog icon will open the Account Settings pages. All server and user settings are located there.</p><div>
+</div><p>The diagonal arrows in the top right corner will enable/disable full screen mode.</p><div>
+</div><p><img alt="news_subs_button.png" src="/webinterfaceguide/news_subs_button.png"><br>
+The Siren icon opens a list of recent ProfitTrailer news. Clicking a news item will open a page for the news story and relevant links.</p><div>
+</div><p>The bell icon opens up a list of the latest bot notifications. It can be expanded for less recent notifications by clicking View all. You can disable these from displaying in this menu using the GUI Notifications button in the <code>User Settings</code>.</p><div>
+</div><p>The calendar icon opens a list of your current additional subscriptions.</p><div>
+</div><p><img alt="monitoring_footer.png" src="/webinterfaceguide/monitoring_footer.png"><br>
+In the footer you'll see the following information.</p><div>
+</div><p><code>Market</code> - The exchange and the market you have chosen.</p><div>
+</div><p><code>PT Ver</code> - The Version number of your ProfitTrailer bot.</p><div>
+</div><p><code>Time</code> - Your local time as configured with <code>server.timezone_offset</code></p><div>
+</div><p><code>Uptime</code> - The length of time your ProfitTrailer instance has been running.</p><div>
+</div><p><code>$</code> - The chosen currency that fiat values will be displayed in based on <code>server.currency</code>. Hover over it to see the currency name.</p><div>
+</div><p><code>SOM</code> - Displays if “Sell Only Mode” is on (true) or off (false). <strong>Clicking the true/false button will change the mode.</strong></p><div>
+</div><p><code>Wiki</code> - Web link to <a class="is-internal-link is-valid-page" href="/en/webinterfaceguide/">https://wiki.profittrailer.com</a></p><div>
+</div><p><code>Discord</code> - Web link to the ProfitTrailer Discord support chat</p><div>
+</div><p><code>Shop</code> - Web link to <a class="is-external-link" href="https://profittrailer.com/shop">https://profittrailer.com/shop</a></p><div>
+</div><p><code>Change Passwords</code> - <img alt="password_button.png" src="/webinterfaceguide/password_button.png"> Click to create/change the admin or monitor password.</p><div>
+</div><p><code>Logout</code> - <img alt="logout_button.png" src="/webinterfaceguide/logout_button.png"> Click to logout of the ProfitTrailer Interface.</p><div>
+</div><p><code>Reset</code> - <img alt="reset_button.png" src="/webinterfaceguide/reset_button.png"> Click to reset ProfitTrailer data history. <strong>CAUTION</strong></p><div>
+</div><p><code>Stop ProfitTrailer</code> - <img alt="stop_button.png" src="/webinterfaceguide/stop_button.png"> Click to stop the ProfitTrailer bot.</p><div>
+</div><h2 class="toc-header" id="dashboard-monitoring-page"><a href="#dashboard-monitoring-page" class="toc-anchor">¶</a> Dashboard / Monitoring page</h2><div>
+</div><p>In the center of the monitoring page there are 16 tiles with varying information as described below.</p><div>
+</div><p><img alt="monitoring_v2_line1.png" src="/webinterfaceguide/monitoring_v2_line1.png"><br>
+In Orange:</p><div>
+</div><ul>
+<li>The current balance of your <code>market</code> currency.</li>
+<li>The exchange name.</li>
+<li>The estimated USD value of your balance.</li>
+<li>The balance available for use on new pairs. See <code>keep_balance</code> and <code>keep_balance_percentage</code>.</li>
+<li>The balance avalable for DCA purchases. See <code>DCA_keep_balance</code> and <code>DCA_keep_balance_percentage</code>.</li>
+<li>The balance reserved for coins currently in reversal status so they may be re-bought.</li>
+</ul><div>
+</div><p>In Blue:</p><div>
+</div><ul>
+<li>The TCV (Total Current value) of all holdings the bot can see excluding dust.</li>
+<li>The estimated USD value of your TCV.</li>
+<li>The TCV of all holdings the bot can see including dust.</li>
+</ul><div>
+</div><p>In Dark Green:</p><div>
+</div><ul>
+<li>The <code>Start Balance</code> of your account.</li>
+<li>The estimated USD value of your <code>Start Balance</code>.</li>
+</ul><div>
+</div><p>In Pale Green:</p><div>
+</div><ul>
+<li>The average trend of altcoins against your <code>market</code> currency over the last 24 hours.</li>
+</ul><div>
+</div><p><img alt="monitoring_v2_line2.png" src="/webinterfaceguide/monitoring_v2_line2.png"><br>
+Box One:</p><div>
+</div><ul>
+<li>The current price of your chosen market currency and trend against USD over 24 hours.</li>
+</ul><div>
+</div><p>Box Two:</p><div>
+</div><ul>
+<li>The current price and trend against USD of the top 5 marketcap coins over 24 hours.</li>
+</ul><div>
+</div><p>Box Three:</p><div>
+</div><ul>
+<li>The total market capitalisation in USD.</li>
+<li>The total value of all volume traded in the last 24 hours in USD.</li>
+<li>The percentage of the Market Cap that is made up by bitcoin.</li>
+</ul><div>
+</div><p>Box Four:</p><div>
+</div><ul>
+<li>The estimated USD value trend of the top 20 altcoins on CoinMarketCap in the last hour.</li>
+<li>The estimated USD value trend of the top 20 altcoins on CoinMarketCap in the last 24 hours.</li>
+<li>The estimated USD value trend of the top 20 altcoins on CoinMarketCap in the last 7 days.</li>
+</ul><div>
+</div><p><img alt="monitoring_v2_line3.png" src="/webinterfaceguide/monitoring_v2_line3.png"><br>
+In Yellow:</p><div>
+</div><ul>
+<li>The number of sales in the last 7 Days.</li>
+<li>The total profit from within the last 7 days.</li>
+<li>The estimated value of the profit with the last 7 days.</li>
+<li>The total volume you have traded in the last 7 days.</li>
+<li>The estimated gain relative to your traded volume in the last 7 days.</li>
+</ul><div>
+</div><p>In Grey-Blue:</p><div>
+</div><ul>
+<li>The number of sales yesterday.</li>
+<li>The total profit yesterday.</li>
+<li>The estimated value of the profit from yesterday.</li>
+<li>The total volume you traded yesterday.</li>
+<li>The estimated gain relative to your traded volume yesterday.</li>
+</ul><div>
+</div><p>In Red:</p><div>
+</div><ul>
+<li>The number of sales today.</li>
+<li>The total profit today.</li>
+<li>The estimated value of the profit from today.</li>
+<li>The total volume you traded today.</li>
+<li>The estimated gain relative to your traded volume today.</li>
+</ul><div>
+</div><p>In Dark Grey:</p><div>
+</div><ul>
+<li><code>SOM</code> - Displays in RED if Sell Only Mode is on (true) or in GREEN is it is off (false).</li>
+<li><code>PT Ver</code> - The version of your ProfitTrailer Bot.</li>
+<li><code>Market</code> The exchange and the market you have chosen.</li>
+</ul><div>
+</div><p><img alt="monitoring_v2_line4.png" src="/webinterfaceguide/monitoring_v2_line4.png"><br>
+Pairs Log:</p><div>
+</div><ul>
+<li>The Current Value (CV) of all pairs in the Pairs Log.</li>
+<li>The Difference (D) between the Current Value and the Bought Cost.</li>
+<li>The Bought Cost (BC) of all pairs in the Pairs Log.</li>
+</ul><div>
+</div><p>DCA Log:</p><div>
+</div><ul>
+<li>The Current Value (CV) of all pairs in the DCA Log.</li>
+<li>The Difference (D) between the Current Value and the Bought Cost.</li>
+<li>The Bought Cost (BC) of all pairs in the DCA Log.</li>
+</ul><div>
+</div><p>Pending Log:</p><div>
+</div><ul>
+<li>The Current Value (CV) of all pairs in the Pending Log.</li>
+<li>The Difference (D) between the Current Value and the Target Value.</li>
+<li>The Target Value (TV) of all pairs in the Pending Log.</li>
+</ul><div>
+</div><p>Sales Log:</p><div>
+</div><ul>
+<li>The Bought Cost (BC) of all pairs in the Sales Log.</li>
+<li>The Difference (D) between the Bought Cost and the Sold Value.</li>
+<li>The Sold Value (SV) of all pairs in the Sales Log.</li>
+</ul><div>
+</div><h2 class="toc-header" id="possible-buy-tab-pbl"><a href="#possible-buy-tab-pbl" class="toc-anchor">¶</a> Possible buy tab (PBL)</h2><div>
+</div><p>The possible Buy Log page contains a table of all coins that are enabled and meet your <code>DEFAULT_min_buy_volume</code> and <code>DEFAULT_min_buy_price</code> criteria.</p><div>
+</div><p><img alt="possible_buy_log.png" src="/webinterfaceguide/possible_buy_log.png"></p><div>
+</div><p><code>Coin</code> - The pair name formatted according to the exchange and the relative price change of the coin over 24 hours. Click the coin name to be taken to the exchange or set a custom URL using the <code>Server Settings &gt; Exchange URL</code>. If no coins are displayed see this FAQ entry.<br>
+If you see <code>TRADING DISABLED</code> it means <code>DEFAULT_trading_enabled = false</code> and the bot will not trade anything.</p><div>
+</div><p><code>Ask Price</code> - The lowest Ask Price currently on the order book for the coin.</p><div>
+</div><p><code>VOL</code> - The Volume, measured in the market currency of the coin, traded in the last 24 hours.</p><div>
+</div><p><code>Buy</code> - The Buy Strategies in use for the coin. See <code>DEFAULT_A_buy_strategy</code>. It will indicate (true) if in the buy zone and (true trailing) if all strategies are true and the bot is trailing. You might also see a reason why the coin will not be bought. The letter for each strategy will also be listed beside the strategy name. (If the strategy A shows on the interface as LOWBB it will show A:LOWBB)</p><div>
+</div><h3 class="toc-header" id="possible-block-reasons"><a href="#possible-block-reasons" class="toc-anchor">¶</a> Possible block reasons:</h3><div>
+</div><ul>
+<li><span style="color: green;">(false_cross)</span> - When using a CROSS strategy this indicates a cross has not occurred within the required <code>cross_candles</code>.</li>
+<li><span style="color: green;">(false_spread)</span> - When using a CROSS strategy this indicates the required spread has not been reached.</li>
+<li><span style="color: green;">(false_sm / false_signal_missed)</span> - When using <code>buy_on_first_signal</code> this indicates you just started the bot or changed to a strategy using the buy_on_first_signal setting and the signal was missed.</li>
+<li><span style="color: green;">(false_signal_past)</span> - When using <code>buy_on_first_signal</code> this indicates your strategy did go true but the buy conditions were not met and a buy was not made this time.</li>
+<li><span style="color: green;">(false_le / false_limit_exceeded)</span> - The Buy Strategy Value (BSV) is beyond the <code>buy_strategy_limit</code> you have set.</li>
+<li><span style="color: green;">(false_lblm / false_label_mismatch)</span> - The signal received is configured with a label and/or the label does not match the signal buy_strategy_label.</li>
+<li><strong>TOO NEW</strong> - The coin is newer than allowed by <code>pair_min_listed_days</code>.</li>
+<li><strong>MAX PAIRS</strong> - You have more pairs than allowed by <code>max_trading_pairs</code></li>
+<li><strong>MAX SPREAD</strong> - The spread between lowest ask and highest bid is greater than allowed by <code>DEFAULT_max_buy_spread</code></li>
+<li><strong>SOM ENABLED</strong> - Sell Only Mode is on so new purchases will not be made.</li>
+<li><strong>REBUY TIMEOUT</strong> - The coin was recently sold and is on a cool down (shown in minutes). Set with <code>DEFAULT_buy_timeout_after_sell</code>.</li>
+<li><strong>MIN BUY VOLUME</strong> - The coins 24 hour volume is below your <code>DEFAULT_min_buy_volume</code> setting.</li>
+<li><strong>ORDERBOOK LOW</strong> - ProfitTrailer is looking at the lowest ask price in the orderbook when buying. The volume at that price does not meet your requirements. See <code>DEFAULT_min_orderbook_volume_percentage</code>.</li>
+<li><strong>PANIC SELL ENABLED</strong> - You have <code>DEFAULT_panic_sell_enabled = true</code>. Buying now will cause an instant loss.</li>
+<li><strong>SOM STATE UNKNOWN</strong> - The bot is unable to determine if it should be in SOM or not. Ensure your <code>SOM_trigger_length</code> and Sell only mode settings are not blank (set to 0 to disable). Restarting the bot may resolve this if it is a connection issue.</li>
+<li><strong>SELL WALL DETECTED</strong> - A large sell order has been detected. See DEFAULT_sell_wall_diff_percentage and DEFAULT_sell_wall_orderbook_depth</li>
+<li><strong>BALANCE CANNOT BE 0</strong> - The bot will not trade if your balance in your market currency is 0. This is an API error safeguard.</li>
+<li><strong>MIN/MAX CHANGE PERC</strong> - The 24 hour price change is outside the range set. See <code>DEFAULT_buy_min_change_percentage</code> and <code>DEFAULT_buy_max_change_percentage</code></li>
+<li><strong>INSUFFICIENT BALANCE</strong> - You do not have sufficient available balance to complete this purchase.</li>
+<li><strong>BUY VALUE BELOW DUST</strong> - your <code>DEFAULT_initial_cost</code> is below the exchange trade minimum.</li>
+<li><strong>PRICE DROP</strong> - SOM is enabled due to <a class="is-internal-link is-valid-page" href="/en/config/pricedroptrigger">PRICE DROP TRIGGER</a></li>
+<li><strong>PRICE RISE</strong> - SOM is enabled due to <a class="is-internal-link is-valid-page" href="/en/config/pricerisetrigger">PRICE RISE TRIGGER</a></li>
+<li><strong>BLOCKED</strong> - a timeout (typically 10 seconds) to prevent double actions taking place on a trade. Blocked means that here is some action taking place with that pair (i.e. the pair is currently being sold or bought or just had a DCA) so ProfitTrailer blocks other processes until the action is completed.</li>
+</ul><div>
+</div><p><code>BSV</code> - The Buy Strategy Value is the current calculated value for the corresponding strategy.</p><div>
+</div><p><code>BST</code> - The Buy Strategy Trigger is the buy_value set for the corresponding strategy.</p><div>
+</div><p><code>BSL</code> - The Buy Strategy Limit is the <code>buy_value_limit</code> set for the corresponding strategy.</p><div>
+</div><p><code>Actions</code> - Actions available for the current circumstance. See What do the Action Buttons do.</p><div>
+</div><p><strong>Formulas</strong> - If you are using a buy/sell formula, the format of the formula will also show in the buy/sell column.<br>
+<img alt="formula.png" src="/webinterfaceguide/formula.png"><br>
+<code>Formula - A || (B &amp;&amp; D)</code> - The buy will look for strategy A to be true OR for strategies B AND D to be true; Either result will trigger the event.<br>
+The red color denotes the strategy is false and a green color denotes the strategy is true.</p><div>
+</div><p>For an explanation of formulas, see the formulas setting explanation.</p><div>
+</div><h2 class="toc-header" id="pairs-tab"><a href="#pairs-tab" class="toc-anchor">¶</a> Pairs tab</h2><div>
+</div><p><img alt="pairs_log_v2.png" src="/webinterfaceguide/pairs_log_v2.png"><br>
+<code>Date</code> - The Date and Time of the most recent buy of the coin. In brackets, the number of days since the last purchase.</p><div>
+</div><p><code>Coin</code> - The pair name formatted according to the exchange and the relative price change of the coin over 24 hours. Click the coin name to be taken to the exchange or set a custom URL using the <code>Server Settings &gt; Exchange URL</code>.</p><div>
+</div><p><code>Sell</code> - The Sell Strategies in use for the coin. See <code>DEFAULT_A_Sell_strategy</code>. It will indicate <span style="color: green;">(true)</span> if in the sell zone and <span style="color: green;">(true trailing)</span> if the strategies are true and the bot is trailing. The letter for each strategy will also be listed beside the strategy name. (If the strategy A shows on the interface as LOWBB it will show A:LOWBB)<br>
+You may also see:</p><div>
+</div><ul>
+<li><span style="color: green;">(false_cross)</span> - When using a CROSS strategy this indicates a cross has not occurred within the required <code>cross_candles</code>.</li>
+<li><span style="color: green;">(false_spread)</span> - When using a CROSS strategy this indicates the required spread has not been reached.</li>
+<li><span style="color: green;">(false_lblm / false_label_mismatch)</span> - The signal received is configured with a label and/or the label does not match the signal sell_strategy_label.</li>
+<li><strong>WATCHMODE</strong> - The coin is not enabled for trading and will not be bought or sold.</li>
+<li><strong>SPECIFY A GAIN/PENDING GAIN</strong> - Seen if settings require a Gain or Pending Gain value but they are blank.</li>
+<li><strong>BALANCE CANNOT BE 0</strong> - The bot will not trade if your balance in your market currency is 0. This is an API error safeguard.</li>
+</ul><div>
+</div><p><code>SSV</code> - The Sell Strategy Value is the current value calculated for the corresponding strategy. SSV for GAIN will show the highest gain reached for as long as the price stays above SST. This is useful for seeing how far the bot has trailed.</p><div>
+</div><p><code>SST</code> - The Sell Strategy Trigger is the <code>sell_value</code> set for the corresponding strategy.</p><div>
+</div><p><code>P%</code> - The Profit Percentage is the difference between your Bought Price and the highest Buy Order on the exchange. If you could sell to the highest bidder right now this is the profit you would have. If <code>orderbook_profit_calculation = true</code> a second Profit calculation will be shown beneath when SSV &gt; 0. The bot will look down the list of Buy Orders with until the cumulative volume is at least the same as the TAM. (The exchange maximum fee is taken into account)</p><div>
+</div><p><code>Bid Price</code> - The current highest Bid Price in the order book for the coin.</p><div>
+</div><p><code>Bought Price</code> - The Price you have paid for the quantity of the coin you currently own.</p><div>
+</div><p><code>Current Value</code> - The Current Value of your holding of the coin based on the highest Bid Order on the order book.</p><div>
+</div><p><code>Bought Cost</code> - The Bought Cost of your holding of the coin. i.e What you have spent buying it.</p><div>
+</div><p><code>USD</code> - The Current Value and Bought Cost converted to your selected <code>currency</code>.</p><div>
+</div><p><code>VOL</code> - The Volume, measured in the market currency of the coin, traded in the last 24 hours.</p><div>
+</div><p><code>TAM</code> - The Total Amount of the coin that you own.</p><div>
+</div><p><code>Actions</code> - Actions available for the current circumstance. See What do the Action Buttons do.</p><div>
+</div><p><strong>Formulas</strong> - If you are using a buy/sell formula, the format of the formula will also show in the buy/sell column.<br>
+<img alt="sell_formula.png" src="/webinterfaceguide/sell_formula.png"><br>
+<code>Formula - (A &amp;&amp; D) || B</code> - The buy will look for strategies A AND D to be true OR for strategy B to be true; Either result will trigger the event.<br>
+The red color denotes the strategy is false and a green color denotes the strategy is true.</p><div>
+</div><p>For an explanation of formulas, see the formulas setting explanation.</p><div>
+</div><h2 class="toc-header" id="dca-tab"><a href="#dca-tab" class="toc-anchor">¶</a> DCA tab</h2><div>
+</div><p><img alt="dca_log_v2.png" src="/webinterfaceguide/dca_log_v2.png"><br>
+<code>Date</code> - The Date and Time of the last purchase of the coin. (new DCA buys will reset this) In brackets, the number of days since the last purchase.</p><div>
+</div><p><code>Coin</code> - The pair name formatted according to the exchange and the relative price change of the coin over 24 hours. Click the coin name to be taken to the exchange or set a custom URL using the <code>Server Settings &gt; Exchange URL</code>.</p><div>
+</div><p><code>Bid.Pr</code> - The current highest Bid Price in the order book for the coin.</p><div>
+</div><p><code>Avg.Pr</code> - The Average Price you have paid for quantity of the coin you currently own.</p><div>
+</div><ul>
+<li><img alt="dca_count.png" src="/webinterfaceguide/dca_count.png"> The number of times the coin has been bought using DCA logic since the initial purchase.</li>
+</ul><div>
+</div><p><code>Buy</code> - The Buy Strategies in use for the coin. See <code>DEFAULT_DCA_A_buy_strategy</code>. It will indicate <span style="color: green;">(true)</span> if in the buy zone and <span style="color: green;">(true trailing)</span> if the strategies are true and the bot is trailing. You might also see a reason why the coin will not be bought. The letter for each strategy will also be listed beside the strategy name. (If the strategy A shows on the interface as LOWBB it will show A:LOWBB)</p><div>
+</div><h3 class="toc-header" id="possible-block-reasons-1"><a href="#possible-block-reasons-1" class="toc-anchor">¶</a> Possible block reasons:</h3><div>
+</div><ul>
+<li><span style="color: green;">(false_cross)</span> - When using a CROSS strategy this indicates a cross has not occurred within the required <code>cross_candles</code>.</li>
+<li><span style="color: green;">(false_spread)</span> - When using a CROSS strategy this indicates the required spread has not been reached.</li>
+<li><span style="color: green;">(false_sm / false_signal_missed)</span> - When using <code>buy_on_first_signal</code> this indicates you just started the bot or changed to a strategy using the buy_on_first_signal setting and the signal was missed.</li>
+<li><span style="color: green;">(false_signal_past)</span> - When using <code>buy_on_first_signal</code> this indicates your strategy did go true but the buy conditions were not met and a buy was not made this time.</li>
+<li><span style="color: green;">(false_le / false_limit_exceeded)</span> - The Buy Strategy Value (BSV) is beyond the <code>buy_strategy_limit</code> you have set.</li>
+<li><span style="color: green;">(false_lblm / false_label_mismatch)</span> - The signal received is configured with a label and/or the label does not match the signal buy_strategy_label.</li>
+<li><strong>TOO NEW</strong> - The coin is newer than allowed by <code>pair_min_listed_days</code>.</li>
+<li><strong>MAX SPREAD</strong> - The spread between lowest ask and highest bid is greater than allowed by <code>DEFAULT_DCA_max_buy_spread</code></li>
+<li><strong>SOM ENABLED</strong> - Sell Only Mode is on so new purchases will not be made.</li>
+<li><strong>MAX BUY TIMES</strong> - The coins has been DCA'd as many times as allowed by <code>DEFAULT_DCA_max_buy_times</code>.</li>
+<li><strong>MAX DCA PAIRS</strong> - This coin is excluded from further DCA buys due to your use of <code>DCA_max_trading_pairs</code></li>
+<li><strong>REBUY TIMEOUT</strong> - The coin was recently bought/sold and is on a cool down (shown in minutes). Set with <code>DEFAULT_buy_timeout_after-sell</code> and <code>DEFAULT_DCA_buy_timeout</code></li>
+<li><strong>MIN BUY VOLUME</strong> - The coins 24 hour volume is below your <code>DEFAULT_DCA_min_buy_volume</code> setting.</li>
+<li><strong>ORDERBOOK LOW</strong> - ProfitTrailer is looking at the lowest ask price in the orderbook when buying. The volume at that price does not meet your requirements. See <code>DEFAULT_DCA_buy_min_orderbook_volume_percentage</code>.</li>
+<li><strong>MAX COST REACHED</strong> - If ProfitTrailer was to DCA the coin another time it would exceed your <code>DEFAULT_DCA_max_cost</code> value.</li>
+<li><strong>SELL WALL DETECTED</strong> - A large sell order has been detected. See <code>DEFAULT_DCA_sell_wall_diff_percentage</code> and <code>DEFAULT_DCA_sell_wall_orderbook_depth</code></li>
+<li><strong>BALANCE CANNOT BE 0</strong> - The bot will not trade if your balance in your market currency is 0. This is an API error safeguard.</li>
+<li><strong>MIN/MAX CHANGE PERC</strong> - The 24 hour price change is outside the range set. See <code>DEFAULT_DCA_buy_min_change_percentage</code> and <code>DEFAULT_DCA_buy_max_change_percentage</code>.</li>
+<li><strong>INSUFFICIENT BALANCE</strong> - You do not have sufficient balance available to the bot to complete this purchase.</li>
+<li><strong>BUY VALUE BELOW DUST</strong> - your <code>DEFAULT_DCA_buy_percentage</code> is too small causing the next DCA buy to be below the exchange trade minimum.</li>
+<li><strong>PRICE DROP</strong> - SOM is enabled due to <a class="is-internal-link is-valid-page" href="/en/config/pricedroptrigger">PRICE DROP TRIGGER</a></li>
+<li><strong>PRICE RISE</strong> - SOM is enabled due to <a class="is-internal-link is-valid-page" href="/en/config/pricerisetrigger">PRICE RISE TRIGGER</a></li>
+<li><strong>BLOCKED</strong> - a timeout (typically 10 seconds) to prevent double actions taking place on a trade. Blocked means that here is some action taking place with that pair (i.e. the pair is currently being sold or bought or just had a DCA) so ProfitTrailer blocks other processes until the action is completed.</li>
+</ul><div>
+</div><p><code>BSV</code> - The Buy Strategy Value is the current calculated value for the corresponding strategy.</p><div>
+</div><p><code>BST</code> - The Buy Strategy Trigger is the <code>buy_value</code> set for the corresponding strategy and DCA level.</p><div>
+</div><p><code>Sell</code> - The Sell Strategies in use for the coin. See <code>DEFAULT_DCA_A_Sell_strategy</code>. It will indicate <span style="color: green;">(true)</span> if in the sell zone and <span style="color: green;">(true trailing)</span> if all strategies are true and the bot is trailing. You might also see:</p><div>
+</div><ul>
+<li><span style="color: green;">(false_cross)</span> - When using a CROSS strategy this indicates a cross has not occurred within the required <code>cross_candles</code>.</li>
+<li><span style="color: green;">(false_spread)</span> - When using a CROSS strategy this indicates the required spread has not been reached.</li>
+<li><span style="color: green;">(false_label_mismatch)</span> - The signal received is configured with a label and/or the label does not match the signal buy_strategy_label.</li>
+<li><strong>SPECIFY A GAIN/PENDING GAIN</strong> - Seen if settings require a Gain or Pending Gain value but they are blank.</li>
+</ul><div>
+</div><p><code>SSV</code> - The Sell Strategy Value is the current value calculated for the corresponding strategy. SSV for GAIN will show the highest gain reached for as long as the price stays above SST. This is useful for seeing how far the bot has trailed.</p><div>
+</div><p><code>SST</code> - The Sell Strategy Trigger is the <code>sell_value</code> set for the corresponding strategy.</p><div>
+</div><p><code>P%</code> - The Profit Percentage is the difference between your bought price and the highest Buy Order on the exchange. If you could sell to the highest bidder right now this is the profit you would have. If <code>DCA_orderbook_profit_calculation = true</code> a second Profit calculation will be shown beneath when SSV &gt; 0. The bot will look down the list of Buy Orders with until the cumulative volume is at least the same as the TAM. (The exchange maximum fee is taken into account)</p><div>
+</div><p><code>VOL</code> - The Volume, measured in the market currency of the coin, traded in the last 24 hours.</p><div>
+</div><p><code>TAM</code> - The Total Amount of the coin that you own.</p><div>
+</div><p><code>Cur.Val</code> - The Current Value of your holding of the coin based on the highest Bid Order on the order book.</p><div>
+</div><p><code>Tot.Cost</code> - The Total Cost of your holding of the coin. i.e What you have spent buying it.</p><div>
+</div><p><code>USD</code> - The Current Value and Target Value converted to your selected <code>currency</code>.</p><div>
+</div><p><code>Actions</code> - Actions available for the current circumstance. See What do the Action Buttons do.</p><div>
+</div><p><strong>Formulas</strong> - If you are using a buy/sell formula, the format of the formula will also show in the buy/sell column.</p><div>
+</div><p><code>Formula - (A &amp;&amp; D) || B</code> - The buy will look for strategies A AND D to be true OR for strategy B to be true; Either result will trigger the event.<br>
+The red color denotes the strategy is false and a green color denotes the strategy is true.<br>
+<img alt="sell_formula.png" src="/webinterfaceguide/sell_formula.png"><br>
+For an explanation of formulas, see the formulas setting explanation.</p><div>
+</div><p>The Pending Log contains coins that have limit sell orders placed on the exchange. Often created manually by the user or by use of <code>DEFAULT_pending_order_wait_time</code> or <code>DEFAULT_DCA_pending_order_wait_time</code>.</p><div>
+</div><p><strong>Note:</strong> Coins that sell from a manually placed exchange order are not recorded in the sales log. Coins that sell from a bot placed pending order will be recorded in the sales log.</p><div>
+</div><h2 class="toc-header" id="pending-tab"><a href="#pending-tab" class="toc-anchor">¶</a> Pending tab</h2><div>
+</div><p><img alt="pending_log_v2.png" src="/webinterfaceguide/pending_log_v2.png"></p><div>
+</div><p><code>Coin</code> - The pair name formatted according to the exchange and the relative price change of the coin over 24 hours. Click the coin name to be taken to the exchange or set a custom URL using the <code>Server Settings &gt; Exchange URL</code>.</p><div>
+</div><p><code>Sell</code> - The Sell Strategy is FIXED as the order is already placed on the exchange.</p><div>
+</div><p><code>Bid Price</code> - The current highest Bid Price in the order book for the coin.</p><div>
+</div><p><code>Target Price</code> - The Target Price shows the price at which the sell order has been set.</p><div>
+</div><p><code>P%</code> - The Profit Percentage is the difference between the Target Price and the Bid Price. If you set a high sell value then this will show how far away you are from that sale (fees are considered)</p><div>
+</div><p><code>CP%</code> - If the same coin is bought again and is in the Pairs or DCA log the Combined Profit in Percentage is displayed to show your combined position for that coin. (averages the two holdings)</p><div>
+</div><p><code>TAM</code> - The Total Amount of the coin that is in the fixed sell order.</p><div>
+</div><p><code>Cur.Val</code> - The Current Value of the coins in the sell order based on the highest Bid Order on the order book.</p><div>
+</div><p><code>Tar.Val</code> - The Target Value of the coins in the sell order based on the Target Price.</p><div>
+</div><p><code>USD</code> - The Current Value and Target Value converted to your selected <code>currency</code>.</p><div>
+</div><p><code>Actions</code> - Actions available for the current circumstance. See What do the Action Buttons do.</p><div>
+</div><h2 class="toc-header" id="buy-history-tab"><a href="#buy-history-tab" class="toc-anchor">¶</a> Buy history tab</h2><div>
+</div><p><img alt="buy_log.png" src="/webinterfaceguide/buy_log.png"></p><div>
+</div><p><img alt="new_buy_record.png" src="/webinterfaceguide/new_buy_record.png"></p><div>
+</div><p>Use the <code>Add New Buy Record</code> button to open a dialog window to add a buy record to the log.<br>
+The Coin needs to follow the same format as the other coins you see in the different log areas, such as the Possible Buy Log, Pairs log, etc.</p><div>
+</div><p>Use the search box to filter any data in the Sales Log (excluding the number of days in brackets in the Date Column).</p><div>
+</div><p>Use the drop down box to select how many rows to show per page. 10, 25, 50, 100 or all.</p><div>
+</div><p><code>Date</code> - The Date and Local Time of the purchase of the coin. In brackets, the number of days since the buy.</p><div>
+</div><p><code>Coin</code> - The pair name formatted according to the exchange and the relative price change of the coin over 24 hours. Click the coin name to be taken to the exchange or set a custom URL using the <code>Server Settings &gt; Exchange URL</code>.</p><div>
+</div><p><code>Order Number</code> - The unique exchange order number associated with this trade.</p><div>
+</div><p><code>Buy Type</code> - DCA or initial purchase</p><div>
+</div><p><code>Buy</code> - The Buy Strategies used to make the purchase. The letter for each strategy will also be listed beside the strategy name. (If the strategy A was shown on the interface as LOWBB it will show A:LOWBB)</p><div>
+</div><p><code>Bought Price</code> - The price paid at the time of the buy. <img alt="dca_count.png" src="/webinterfaceguide/dca_count.png"> - The number of DCA buy times if the coin was DCA'd.</p><div>
+</div><p><code>Bought Amount</code> - The amount of coins bought</p><div>
+</div><p><code>Bought Cost</code> - The total cost of bought price x amount</p><div>
+</div><p><code>VOL</code> - The market currency volume of the coin at the time of the buy</p><div>
+</div><p><code>BSV</code> - The Buy Strategy Value is the calculated value for the corresponding strategy at the time of the buy.</p><div>
+</div><p><code>BST</code> - The Buy Strategy Trigger is the buy_value used for the corresponding strategy.</p><div>
+</div><p><code>BSL</code> - The Buy Strategy Limit is the <code>buy_value_limit</code> used for the corresponding strategy.</p><div>
+</div><h2 class="toc-header" id="sell-history-tab"><a href="#sell-history-tab" class="toc-anchor">¶</a> Sell history tab</h2><div>
+</div><p><img alt="sales_log_v2.png" src="/webinterfaceguide/sales_log_v2.png"></p><div>
+</div><p><img alt="new_sales_record.png" src="/webinterfaceguide/new_sales_record.png"></p><div>
+</div><p>Use the <code>Add New Sales Record</code> button to open a dialog window to add a sales record to the log.<br>
+The Coin needs to follow the same format as the other coins you see in the different log areas, such as the Possible Buy Log, Pairs log, etc.</p><div>
+</div><p>Use the search box to filter any data in the Sales Log (excluding the number of days in brackets in the Date Column).</p><div>
+</div><p>Use the drop down box to select how many rows to show per page. 10, 25, 50, 100 or all.</p><div>
+</div><p><code>Date</code> - The Date and Local Time of the sale of the coin. In brackets, the number of days since the sale.</p><div>
+</div><p><code>Coin</code> - The pair name formatted according to the exchange and the relative price change of the coin over 24 hours. Click the coin name to be taken to the exchange or set a custom URL using the <code>Server Settings &gt; Exchange URL</code>.</p><div>
+</div><p><code>Sell</code> - The Sell Strategies used in the sale of the coin. The letter for each strategy will also be listed beside the strategy name. (If the strategy A was shown on the interface as LOWBB it will show A:LOWBB)</p><div>
+</div><ul>
+<li>You might also see other sell reasons shown such as:
+<ul>
+<li><strong>MANUAL</strong> - Manual Sell using the Sell button. See What do the Buy and Sell Buttons do.</li>
+<li><strong>STOP LOSS</strong> - The sell occurred due to your <code>DEFAULT_stop_loss_trigger</code> or <code>DEFAULT_DCA_stop_loss_trigger</code> settings.</li>
+<li><strong>PANIC SELL</strong> - The sell occurred due to the use of <code>DEFAULT_panic_sell_enabled</code> or <code>DEFAULT_DCA_panic_sell_enabled</code></li>
+<li><strong>MAX PROFIT</strong> - The sell occurred as a result of reaching your <code>DEFAULT_max_profit</code> or <code>DEFAULT_DCA_max_profit</code> setting.</li>
+<li><strong>TAKE PROFIT</strong> - The sell occurred as a result of triggering <code>DEFAULT_take_profit_percentage</code> or <code>DEFAULT_DCA_take_profit_percentage</code> as well as the related <code>wait_time</code> and <code>reset_percentage_move</code>.</li>
+<li><strong>TAKE PROFIT SAFETY</strong> - The sell occured due to triggering your <code>DEFAULT_take_profit_safety_arm</code> and <code>DEFAULT_take_profit_safety_fire</code> settings or DCA equivalents.</li>
+<li><strong>TRAILING STOP LOSS</strong> - The sell occurred due to triggering your <code>DEFAULT_trailing_stop_loss_trigger</code> or <code>DEFAULT_DCA_trailing_stop_loss_trigger</code></li>
+</ul>
+</li>
+</ul><div>
+</div><p><code>P%</code> - The Profit Percentage is the percentage of profit you made on the trade based on the Bought Price and Sell Price recorded and taking the highest possible fee charged by the exchange into account.</p><div>
+</div><p><code>Profit BTC</code> - The Profit from the trade in the configured market. (minus the highest possible fee charged by the exchange.)</p><div>
+</div><p><code>USD</code> - The Profit from the trade converted to your chosen currency based on today's conversion rate.</p><div>
+</div><p><code>SAM</code> - The Sold Amount of the coin.</p><div>
+</div><p><code>Bought Price</code> - The average price paid for the coins that were sold in the market currency.</p><div>
+</div><p><code>Sold Price</code> - The sold price for the coins in the market currency. <img alt="dca_count.png" src="/webinterfaceguide/dca_count.png"> - The number of DCA buy times if the coin was DCA'd.</p><div>
+</div><p><code>Bought Cost</code> - The total spent on the purchase of the coins in the market currency.</p><div>
+</div><p><code>Sold Value</code> - The total value of the sale in the market currency.</p><div>
+</div><p><code>USD</code> - The Bought Cost and Sold Value converted to your selected <code>currency</code>.</p><div>
+</div><h2 class="toc-header" id="misc-coins-tab"><a href="#misc-coins-tab" class="toc-anchor">¶</a> Misc Coins tab</h2><div>
+</div><p>The miscellaneous coins log areas display the current state of coins in Dust, Reserved, and Reversal status.</p><div>
+</div><p>The Dust Log is filled with small amounts of coins leftover from trades that are below the minimum trading size on the exchange, if they grow in value they can return to pairs and be sold. They can also be combined with any new purchases of the coin sold by ProfitTrailer.<br>
+<img alt="dust_header.png" src="/webinterfaceguide/dust_header.png"><br>
+<img alt="dust_log_v2.png" src="/webinterfaceguide/dust_log_v2.png"><br>
+<code>Date</code> - The Date and Local Time of the sale of the coin. In brackets, the number of days since the sale.</p><div>
+</div><p><code>Coin</code> - The pair name formatted according to the exchange and the relative price change of the coin over 24 hours. Click the coin name to be taken to the exchange or set a custom URL using the <code>Server Settings &gt; Exchange URL</code>.</p><div>
+</div><p><code>Bid Price</code> - The current highest Bid Price in the order book for the coin.</p><div>
+</div><p><code>Bought Price</code> - The Price you have paid for the quantity of the coin you currently own.</p><div>
+</div><p><code>Current Value</code> - The Current Value of your holding of the coin based on the highest Bid Order on the order book.</p><div>
+</div><p><code>Bought Cost</code> - The Bought Cost of your holding of the coin. i.e What you have spent buying it.</p><div>
+</div><p><code>USD</code> - The Profit from the trade converted to your chosen currency based on today's conversion rate.</p><div>
+</div><p><code>VOL</code> - The Volume, measured in the market currency of the coin, traded in the last 24 hours.</p><div>
+</div><p><code>TAM</code> - The Total Amount of the coin that you own.</p><div>
+</div><p><code>Actions</code> - Actions available for the current circumstance. See What do the Action Buttons do.</p><div>
+</div><p>The reserved log displays the amount of reserved coin you currently hold. Reserved coin will not be actively traded but instead held in reserve. Reserved coin must be manually released.<br>
+<img alt="reserved_header.png" src="/webinterfaceguide/reserved_header.png"><br>
+<img alt="reserved_log_v2.png" src="/webinterfaceguide/reserved_log_v2.png"><br>
+<code>Date</code> - The Date and Local Time of the placement of the coin into reserved status.</p><div>
+</div><p><code>Coin</code> - The pair name formatted according to the exchange and the relative price change of the coin over 24 hours. Click the coin name to be taken to the exchange or set a custom URL using the <code>Server Settings &gt; Exchange URL</code>.</p><div>
+</div><p><code>TAM</code> - The Total Amount of the coin that you own.</p><div>
+</div><p><code>Average Price</code> - The Average Price you have paid for quantity of the coin you currently own.</p><div>
+</div><p><code>Total Cost</code> - The Total Cost of your holding of the coin. i.e What you have spent buying it.</p><div>
+</div><p><code>Actions</code> - Actions available for the current circumstance. See What do the Action Buttons do.</p><div>
+</div><p>The reversal log displays the coins currently in reversal status. For an explanation of reversal logic, click here.<br>
+<img alt="reversal_header.png" src="/webinterfaceguide/reversal_header.png"><br>
+<img alt="reversal_log_v2.png" src="/webinterfaceguide/reversal_log_v2.png"><br>
+<code>Date</code> - The Date and Local Time of the placement of the coin into reversal status.</p><div>
+</div><p><code>Coin</code> - The pair name formatted according to the exchange and the relative price change of the coin over 24 hours. Click the coin name to be taken to the exchange or set a custom URL using the <code>Server Settings &gt; Exchange URL</code>.</p><div>
+</div><p><code>TAM</code> - The Total Amount of the coin that you own.</p><div>
+</div><p><code>Avg. Price</code> - The Average Price you have paid for quantity of the coin you currently own.</p><div>
+</div><p><code>Cur. Price</code> - The current best price on the exchange order book for the coin.</p><div>
+</div><p><code>Target Price</code> - The target price, according to your strategy.</p><div>
+</div><p><code>Sold Price</code> - The price the coins were sold for to start the reversal.</p><div>
+</div><p><code>Current Profit</code> - The current profit percentage.</p><div>
+</div><p><code>Target Profit</code> - The profit percentage at which the coin will rebuy.</p><div>
+</div><p><code>Sold Profit</code> - The profit percentage at which the coin was sold.</p><div>
+</div><p><code>Total Cost</code> - The Total Cost of your holding of the coin. i.e What you have spent buying it.</p><div>
+</div><p><code>Actions</code> - Actions available for the current circumstance. See What do the Action Buttons do.</p><div>
+</div><h2 class="toc-header" id="config-tab"><a href="#config-tab" class="toc-anchor">¶</a> Config tab</h2><div>
+</div><p>The Config is the only method for editing the PAIRS, DCA and INDICATORS configurations.</p><div>
+</div><p>You can change the config you wish to edit by selecting config name to reveal a drop down menu. If you see only one config name instead of a dropdown, you can hover over the config link in the header and choose <code>other configs</code>.</p><div>
+</div><p><img alt="config_menu.png" src="/webinterfaceguide/config_menu.png"></p><div>
+</div><p>Config &gt; Active Config</p><div>
+</div><p><img alt="config_active.png" src="/webinterfaceguide/config_active.png"></p><div>
+</div><p>Config &gt; Other Configs</p><div>
+</div><p><img alt="config-other.png" src="/webinterfaceguide/config-other.png"></p><div>
+</div><p>Choosing a config using the dropdown menu seen in “other configs” does not change the active configuration that ProfitTrailer is using. It will only make/save changes in the config for later use.</p><div>
+</div><p>In order to change the active config, click the config selector in the header.<br>
+Edits made to the active configuration are immediately used by ProfitTrailer.</p><div>
+</div><p><img alt="config_dropdown.png" src="/webinterfaceguide/config_dropdown.png"></p><div>
+</div><hr><div>
+</div><p><img alt="advanced_config_header.png" src="/webinterfaceguide/advanced_config_header.png"><br>
+<span style="font-weight: bold; color: red;">Config Name</span> - The name of the config that is being displayed/edited.</p><div>
+</div><ul>
+<li>In other configs screen, click to select a different config.</li>
+<li><img alt="config_search.png" src="/webinterfaceguide/config_search.png"> Open a search dialog to find specific text.</li>
+<li><img alt="config_delete.png" src="/webinterfaceguide/config_delete.png"> Click this to delete the configuration being displayed.</li>
+<li>Only seen in Other Configs screen when a config other than the current active config is selected.</li>
+<li><img alt="config_save.png" src="/webinterfaceguide/config_save.png"> Save any changes you have made.</li>
+<li><img alt="config_new.png" src="/webinterfaceguide/config_new.png"> Copy the config displayed and save with a new name</li>
+<li>There is no 'New' icon or button available on the Active Config screen, it is only available on the Other Configs screen.</li>
+<li><img alt="config_download.png" src="/webinterfaceguide/config_download.png"> Download the configuration files for the displayed config.</li>
+<li><img alt="public_configs_button.png" src="/webinterfaceguide/public_configs_button.png"> Enter the public configs menu to name and load a new public config.</li>
+<li>Only seen in Other Configs screen.</li>
+</ul><div>
+</div><hr><div>
+</div><p><code>Pairs</code> - View/configure the Pairs Config screen for the editing config.<br>
+<img alt="advanced_config_pairs.png" src="/webinterfaceguide/advanced_config_pairs.png"></p><div>
+</div><hr><div>
+</div><p><code>DCA</code> - View/configure the DCA Config screen for the editing config.<br>
+<img alt="advanced_config_dca.png" src="/webinterfaceguide/advanced_config_dca.png"></p><div>
+</div><hr><div>
+</div><p><code>Indicators</code> - View/configure the Indicators Config screen for the editing config.<br>
+<img alt="advanced_config_indicators.png" src="/webinterfaceguide/advanced_config_indicators.png"></p><div>
+</div><p>Hotconfig parameters for older versions are here.</p><div>
+</div><p><strong>One time Adjustments</strong></p><div>
+</div><blockquote class="is-success">
+<p>The HotConfig allows you to set one time properties from the web interface.</p>
+</blockquote><div>
+</div><p>The HotConfig allows you to modify 3 properties:</p><div>
+</div><ul>
+<li>Test Mode Balance</li>
+<li>DCA Set Buy Times</li>
+<li>Set Bought Price</li>
+</ul><div>
+</div><h3 class="toc-header" id="hot-config"><a href="#hot-config" class="toc-anchor">¶</a> Hot Config</h3><div>
+</div><p>To access hotconfig, hover over the config button in the web interface and select hotconfig.<br>
+<img alt="config_menu.png" src="/webinterfaceguide/config_menu.png"></p><div>
+</div><p><code>Test Mode Balance</code> - Set or change the starting Balance for test bots. Decimals higher than or equal to 0.</p><div>
+</div><p><code>DCA Set Buy Times</code> - Choose a pair in the dropdown, then set the DCA level on a coin.</p><div>
+</div><ul>
+<li>If you want ProfitTrailer to see it has DCA'd 2 times set 2
+<ul>
+<li>Only works if this coin is DCA enabled.</li>
+</ul>
+</li>
+</ul><div>
+</div><p><code>Set Bought Price</code> - Choose a pair in the dropdown, then set the bought price if the bot could not calculate the price correctly. The price you put in here will be set as the current average price of your pair.</p><div>
+</div><p>This is just a very simple weighted average. Find each purchase's weighted average, (price + fees) x coin amount, then add those totals together to find the total cost, then use the total cost including fees and divide by the number of that coin you own.<br>
+You should also verify that the total number of coins you calculate adds up to the total amount of coins that ProfitTrailer shows you own.</p><div>
+</div><pre class="prismjs line-numbers"><code class="language-">(price + fees) x coin amount = cost for purchase 1
+(price + fees) x coin amount = cost for purchase 2 
+cost for purchase 1 + cost for purchase 2 = Total Cost + Fees
+
+Total Cost + Fees
+------------------ = Average Bought Price
+Number of Coins
+</code></pre><div>
+</div><p><a class="is-external-link" href="https://www.rapidtables.com/calc/math/weighted-average-calculator.html">You can Click here for a simple weighted average calculator.</a><br>
+For the calculator, weight is the number of coins, data number is the purchase price.</p><div>
+</div><h2 class="toc-header" id="stats-page"><a href="#stats-page" class="toc-anchor">¶</a> Stats Page</h2><div>
+</div><p>The stats page is only available to Pro/Advanced license holders. It will show:</p><div>
+</div><p><code>Daily Profits</code> - Daily Profits over time</p><div>
+</div><p><code>Monthly Profits</code> - Monthly Profits over time</p><div>
+</div><p><code>Sales Distribution</code> - Breakdown of what triggers have been used to make sales<br>
+<img alt="sales_distribution.png" src="/webinterfaceguide/sales_distribution.png"></p><div>
+</div><p><code>Total Current Value</code> - Fluctuation in TCV (Total Current Value) over time</p><div>
+</div><p><code>Daily: Spent vs Earned</code> - Daily spending vs earning over time</p><div>
+</div><p><code>Monthly: Spent vs Earned</code> - Monthly spending vs earning over time</p><div>
+</div><p><code>Daily: Buys vs Sales</code> - Daily number of buys vs sales</p><div>
+</div><p><code>Monthly: Buys vs Sales</code> - Monthly number of buys vs sales<br>
+<img alt="stats_page.png" src="/webinterfaceguide/stats_page.png"></p><div>
+</div><h2 class="toc-header" id="advanced-statistics"><a href="#advanced-statistics" class="toc-anchor">¶</a> Advanced Statistics</h2><div>
+</div><p>If you are a Pro/Advanced User and have the Advanced Stats button enabled in the User Settings, you will see extra sales and trailing statistics in the GUI.<br>
+Statistics are only available where applicable.<br>
+<img alt="pbl-stats-as.png" src="/webinterfaceguide/pbl-stats-as.png"><br>
+<code>STATS-TSL</code> - Trailing Stoploss - Identifies a trailing stop loss sales trigger.</p><div>
+</div><p><code>STATS-TPS</code> - Take Profit Safety - Identifies a Take Profit Safety sales trigger.</p><div>
+</div><p><code>STATS-SL</code> - Stop Loss - Identifies a Stop Loss sales trigger.</p><div>
+</div><p><code>STATS-AS</code> - After Sale - Tracks the price action for 24 hours after a coin has sold and only while the bot is running.</p><div>
+</div><p><code>STATS-DD</code> - DrawDown - Displays the Peak, Bottom, and Drawdown of your active pairs.</p><div>
+</div><ul>
+<li>An explanation of what Drawdown is can be Found <a class="is-external-link" href="https://www.investopedia.com/terms/d/drawdown.asp">Here</a>.</li>
+</ul><div>
+</div><p><code>L</code> - Lowest Price - The lowest coin price reached.</p><div>
+</div><p><code>H</code> - Highest Price - The highest coin price reached.</p><div>
+</div><p><code>OT</code> - Original Trigger - The trigger value from the pairs or DCA TSL settings.</p><div>
+</div><p><code>CT</code> - Current Trigger - The value difference between the current P% and the OT. (i.e.- if your current P% is 1.00 and your OT is -0.2, your CT will show 0.8)</p><div>
+</div><p><code>HP</code> - Highest Profit - The highest P% reached during or at the end of the session.</p><div>
+</div><p><code>CP</code> - Current Profit - The current P% during or at the end of the session.</p><div>
+</div><p><code>LP</code> - Lowest Profit - The lowest P% reached during or at the end of the session.</p><div>
+</div><p><code>STATS-TB</code> - Trailing Buy - The trailing stats for a coin. Contained within are OV, TV, CP, and LP.</p><div>
+</div><ul>
+<li>TB values are shown on 2 separate lines for display conformance, TB1 and TB2.</li>
+</ul><div>
+</div><p><code>OV</code> - Original Value - The value at which trailing starts on the coin.</p><div>
+</div><p><code>TV</code> - Trailing Value - The value from the pairs or DCA trailing buy settings.</p><div>
+</div><h2 class="toc-header" id="account-settings"><a href="#account-settings" class="toc-anchor">¶</a> Account settings</h2><div>
+</div><p>The Settings Cog icon in the interface window at upper right will open the Account Settings pages.<br>
+All server and user settings are located here.<br>
+<img alt="account_settings.png" src="/webinterfaceguide/account_settings.png"></p><div>
+</div><p>The account settings pages have text entry boxes and buttons for enabling/disabling features.<br>
+Text entry boxes have a place to enter your text for that particular setting and also a description of each individual setting below the text entry box.</p><div>
+</div><p>The descriptions are outlined below.</p><div>
+</div><p><code>Application Port</code> - The port that is being used by the bot. Change this value to something unique (like 8082, etc) if you want to start other instances of the bot on the same machine.</p><div>
+</div><p><code>Site Name</code> - Set the unique text you wish to appear in the browser tab (website title). This it also used in Discord and Telegram Notifications.</p><div>
+</div><p><code>Api Token</code> - This optional token can be used to allow third party applications to connect to your BOT via a built in API.</p><div>
+</div><ul>
+<li>You can click the linked text in this area to generate a random string.</li>
+</ul><div>
+</div><p><code>PTFeeder Location</code> - The PTFeeder root folder location. If you do not use PTFeeder, leave this blank.</p><div>
+</div><p><code>Server Address</code> - Bind the Profit trailer instance to a specific WAN/Public IP address. Useful for uses with multiple public IP addresses and multiple bots.</p><div>
+</div><p><code>Server Context Path</code> - Adds a custom base url to the Web server. Using the example '/binancebtc' you would now access ProfitTrailer from <a class="is-external-link" href="http://localhost:8081/binancebtc/monitoring">http://localhost:8081/binancebtc/monitoring</a>.</p><div>
+</div><p><code>Exchange URL</code> - Define a custom url to be used when a coin pair is clicked in the Web GUI. The %c and %b values are variables based on the coin pair being clicked.</p><div>
+</div><ul>
+<li><strong>%c</strong> = currency (DOGE)</li>
+<li><strong>%b</strong> = base (BTC)</li>
+</ul><div>
+</div><p>If you are wanting to link to TV instead of the exchange this is also possible.</p><div>
+</div><ul>
+<li>Binance: <a class="is-external-link" href="https://www.tradingview.com/chart/?symbol=BINANCE:%25c%25b">https://www.tradingview.com/chart/?symbol=BINANCE:%c%b</a></li>
+<li>Binance Futures: <a class="is-external-link" href="https://www.tradingview.com/chart/?symbol=BINANCE:%25c%25bPERP">https://www.tradingview.com/chart/?symbol=BINANCE:%c%bPERP</a></li>
+<li>Bittrex: <a class="is-external-link" href="https://www.tradingview.com/chart/?symbol=BITTREX:%25c%25b">https://www.tradingview.com/chart/?symbol=BITTREX:%c%b</a></li>
+<li>Poloniex: <a class="is-external-link" href="https://www.tradingview.com/chart/?symbol=POLONIEX:%25c%25b">https://www.tradingview.com/chart/?symbol=POLONIEX:%c%b</a></li>
+</ul><div>
+</div><p><code>Log History</code> - Set how many days of sell log history to show in the GUI. Once the set number of days passes, older history will be removed from the bot.</p><div>
+</div><p><code>Run in Test Mode</code> - Enable (blue) or disable (grey) this setting to use test mode in your bot.<br>
+<img alt="test_mode_button.png" src="/webinterfaceguide/test_mode_button.png"></p><div>
+</div><p><img alt="warnbr.png" src="/webinterfaceguide/warnbr.png"><strong>WARNING</strong>: Test mode can be changed without restarting, so ensure your bot is actually in test mode by looking for the red colored 'test mode' text just below the ProfitTrailer icon in the upper left of the GUI.<br>
+<img alt="testmode.png" src="/webinterfaceguide/testmode.png"></p><div>
+</div><p><code>Use Margin Account</code> - Enable (blue) or disable (grey) the use of margin trading for your bot. (Only for Binance Margin)<br>
+<img alt="margin_button.png" src="/webinterfaceguide/margin_button.png"></p><div>
+</div><p><code>Save Server Settings</code> - Click this button to save your settings for this screen.<br>
+<img alt="save_server_button.png" src="/webinterfaceguide/save_server_button.png"></p><div>
+</div><p><code>Start Balance</code> - The balance you had when first starting. Also used to calculate TCV based profit %.</p><div>
+</div><ul>
+<li>Note: This is NOT the same as Test Mode Balance.</li>
+</ul><div>
+</div><p><code>Profit Calculation Method</code> - The method used to calculate profit displayed on the GUI. Choose MARKUP or TCV. For a description of how they calculate, <a class="is-external-link" href="https://www.investopedia.com/ask/answers/102714/whats-difference-between-profit-margin-and-markup.asp">Click Here</a>.</p><div>
+</div><p><code>Buy Order Type</code> - The order type you want ProfitTrailer to buy with.</p><div>
+</div><ul>
+<li>This field is only visible on exchanges that support it.</li>
+<li>This field does NOT override the manual buy/sell popup choice dialog box.</li>
+</ul><div>
+</div><p><code>Sell Order Type</code> - The order type you want ProfitTrailer to sell with.</p><div>
+</div><ul>
+<li>This field is only visible on exchanges that support it.</li>
+<li>This field does NOT override the manual buy/sell popup choice dialog box.</li>
+</ul><div>
+</div><p><code>Trading Delay</code> - The start delay prevents the bot from trading for the set number of minutes after bootup. This parameter is designed to give you enough time to place the bot in Sell Only Mode (SOM), or to disable trading, or change your buy/sell strategies before it resumes trading.</p><div>
+</div><p><code>Theme</code> - Choose between three possible skins dark, light and default.</p><div>
+</div><p><code>Currency</code> - Set your desired currency for which the Web GUI will display values.</p><div>
+</div><p><code>Language</code> - Set your desired localization for the Web GUI.</p><div>
+</div><p><code>Timezone</code> - Set the timezone ID of the location you live.</p><div>
+</div><p><code>Adv. Stats</code> - Advanced Stats - If you are a Pro or Advanced license holder you can Enable (blue) or disable (grey) for extra sales and trailing statistics in the GUI. Statistics are only available where applicable.<br>
+<img alt="adv_stats_button.png" src="/webinterfaceguide/adv_stats_button.png"></p><div>
+</div><p><code>GUI Notifications</code> - Enable (blue) or disable (grey) notification messages in the web gui notification dialog for the bot. This is not the same as the information contained in the notification settings tab for the bot.<br>
+<img alt="gui_notifications_button.png" src="/webinterfaceguide/gui_notifications_button.png"></p><div>
+</div><p><code>Offline Config</code> - Enable (blue) or disable (grey) storage of your config (pairs, dca, indicators) data with the local data on your server or securely online on ProfitTrailer's server.</p><div>
+</div><p><code>Auto Open Browser</code> - Enable (blue) or disable (grey) the browser from opening when the bot is started. Only works for localhost.</p><div>
+</div><p><code>Save User Settings</code> - Click this button to save your settings for this screen.<br>
+<img alt="save_user_settings.png" src="/webinterfaceguide/save_user_settings.png"></p><div>
+</div><p>The notifications settings control startup, shutdown, buy, and sell messages that are sent to your Discord or Telegram account(s).<br>
+For more information on the information required for these settings, refer to the Notifications Setup Wiki Page.</p><div>
+</div><p><strong>Global</strong><br>
+<code>Advanced Notifications</code> - Set to true (Enabled) and save your settings to enable Advanced Notifications.</p><div>
+</div><p><strong>Discord</strong><br>
+<code>New Signal Notification Channel</code> - A separate channel for new SIGNAL notifications to be sent to. If nothing is set, Chat from discord instance 1 will be used instead.</p><div>
+</div><ul>
+<li>This is NOT the same as the information from Signal Providers. Discord signal settings control buy/sell messages sent to discord.</li>
+</ul><div>
+</div><p><code>New Signal Notification</code> - Enable to send new signal notifications to the <code>New Signal Notification Channel</code>.</p><div>
+</div><p><code>Startup Notification</code> - Enable to receive startup notifications.</p><div>
+</div><p><code>Shutdown Notification</code> - Enable to receive shutdown notifications.</p><div>
+</div><p><strong>Telegram</strong><br>
+<code>New Signal Notification</code> - Enable to receive new signal notifications.</p><div>
+</div><p><code>Startup Notification</code> - Enable to receive startup notifications.</p><div>
+</div><p><code>Shutdown Notification</code> - Enable to receive shutdown notifications.</p><div>
+</div><p><code>Save Notification Settings</code> - Click this button to save your settings for this screen.<br>
+<img alt="save_notification_button.png" src="/webinterfaceguide/save_notification_button.png"></p><div>
+</div><p>The discord instance tabs (1 and 2) have the same information. Enter the information into each instance you want to use. If you only want to use one instance, leave the second instance tab information blank.</p><div>
+</div><p><code>Bot Token</code> - Your Discord Bot Token.</p><div>
+</div><p><code>Chat</code> - The channel name in which the discord bot will post notifications. Do not use a hash(#) in the name, use only the channel name.</p><div>
+</div><p>The Test Settings button will send a test message to your discord bot and will show a successful test message if the settings are correct.<br>
+<img alt="test_settings_button.png" src="/webinterfaceguide/test_settings_button.png"></p><div>
+</div><p><code>Sell Message</code> - Configure a custom sell message output format (optional). Available variables: dcaCount, instanceName, strategies, quantity, rate, total, profit, dollar, boughtDate, percentage.</p><div>
+</div><p><code>Buy Message</code> - Configure a custom buy message output format (optional). Available variables: dcaCount, instanceName, quantity, rate, avgCost, total, percentage</p><div>
+</div><p><code>Error Message</code> - Add error messages that need to be ignored, seperated by a comma; i.e. SomeKindOfExchangeError,AnotherExchangeError. Examples: BinanceWebSocketAdapterKline,APIKEY_INVALID</p><div>
+</div><p><code>Sell Messages Button</code> - Enable to receive custom sell messages.</p><div>
+</div><p><code>Buy Messages Button</code> - Enable to receive custom buy messages.</p><div>
+</div><p><code>Error Messages Button</code> - Enable to receive error messages.</p><div>
+</div><p><code>Commands Button</code> - Enable the use of commands.</p><div>
+</div><p><code>Save Notification Settings</code> - Click this button to save your settings for this screen.<br>
+<img alt="save_notification_button.png" src="/webinterfaceguide/save_notification_button.png"></p><div>
+</div><p>The telegram instance tabs (1 and 2) have the same information. Enter the information into each instance you want to use. If you only want to use one instance, leave the second instance tab information blank.</p><div>
+</div><p><code>Bot Token</code> - Your Telegram Bot Token.</p><div>
+</div><p><code>Chat ID</code> - Your numeric Chat ID.</p><div>
+</div><p>The Test Settings button will send a test message to your telegram bot and will show a successful test message if the settings are correct.<br>
+<img alt="test_settings_button.png" src="/webinterfaceguide/test_settings_button.png"></p><div>
+</div><p><code>Sell Message</code> - Configure a custom sell message output format (optional). Available variables: dcaCount, instanceName, strategies, quantity, rate, total, profit, dollar, boughtDate, percentage.</p><div>
+</div><p><code>Buy Message</code> - Configure a custom buy message output format (optional). Available variables: dcaCount, instanceName, quantity, rate, avgCost, total, percentage</p><div>
+</div><p><code>Error Message</code> - Add error messages that need to be ignored, seperated by a comma; i.e. SomeKindOfExchangeError,AnotherExchangeError. Examples: BinanceWebSocketAdapterKline,APIKEY_INVALID</p><div>
+</div><p><code>Sell Messages Button</code> - Enable to receive custom sell messages.</p><div>
+</div><p><code>Buy Messages Button</code> - Enable to receive custom buy messages.</p><div>
+</div><p><code>Error Messages Button</code> - Enable to receive error messages.</p><div>
+</div><p><code>Commands Button</code> - Enable the use of commands.</p><div>
+</div><p><code>Save Notification Settings</code> - Click this button to save your settings for this screen.<br>
+<img alt="save_notification_button.png" src="/webinterfaceguide/save_notification_button.png"></p><div>
+</div><p><code>SSL Key Store</code> - Add the path to your keystore file.</p><div>
+</div><p><code>SSL Key Store Password</code> - Insert your Key Store Password.</p><div>
+</div><p><code>SSL Key Password</code> - Insert your Key Password.</p><div>
+</div><p><code>SSL Key Store Type</code> - Insert Key Store Type.</p><div>
+</div><p><code>SSL Key Alias</code> - Insert Key Store Alias.</p><div>
+</div><p><code>Save SSL Settings</code> - Click this button to save your settings for this screen.<br>
+<img alt="save_ssl_settings.png" src="/webinterfaceguide/save_ssl_settings.png"></p><div>
+</div><p><code>Choose Your Providers</code> - Select the signal providers you want this bot to accept signals from. Leave ALL Disabled to accept signals from ALL your providers.</p><div>
+</div><p><code>You can select from the following list of providers</code> - Your list will be different from others. There will be buttons to Enable (blue) or disable (grey), for each of your active signal subscriptions.</p><div>
+</div><p><code>Current list of providers</code> - A list of current available signal providers. Click on the 'Go to product' link below each provider to navigate to the ProfitTrailer web shop.</p><div>
+</div><p><code>Save Signal Provider Settings</code> - Click this button to save your settings for this screen.<br>
+<img alt="save_signalprov_settings.png" src="/webinterfaceguide/save_signalprov_settings.png"></p><div>
+</div><p>The PT Assistant settings tab contains the settings required for exchange API key usage, Voucher usage and information about your license.</p><div>
+</div><p><code>Redeem Voucher</code> - Enter a valid Voucher Key.</p><div>
+</div><ul>
+<li>Use the dropdown box to select the category for your voucher key, choices are:
+<ul>
+<li>License Upgrade</li>
+<li>API Slots</li>
+<li>Configs</li>
+<li>Signals</li>
+</ul>
+</li>
+</ul><div>
+</div><p>Click on the <code>Redeem Voucher</code> button to redeem the selected voucher key.<br>
+<img alt="redeem_voucher_button.png" src="/webinterfaceguide/redeem_voucher_button.png"></p><div>
+</div><p><code>Current Api Keys</code> - Lists your current API keys and the last active time the key was used.<br>
+To “remove” a key from the bot, simply stop using the API key and stop the bot for 10 minutes.<br>
+After the time has elapsed and a restart, the key slot will be available for use.</p><div>
+</div><p><code>License Information</code> - Displays information about your license including:</p><div>
+</div><ul>
+<li>License Type</li>
+<li>Exchange</li>
+<li>Api Keys (Total and number in use)</li>
+<li>Extra Slots</li>
+<li>Allowed Configs (Total and number in use)</li>
+<li>Expiration Date (for the license subscription)</li>
+</ul><div>
+</div><p>The Logs tab will show a page containing the last 500 lines of the ProfitTrailer.log file.<br>
+Click on the download icon <img alt="config_download.png" src="/webinterfaceguide/config_download.png"> to download the full log.</p><div>
+</div></div></template><template slot="comments"><div><comments></comments></div></template></page></div></body></html>

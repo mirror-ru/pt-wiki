@@ -1,0 +1,59 @@
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta charset="UTF-8"><meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1, maximum-scale=5"><meta name="theme-color" content="#1976d2"><meta name="msapplication-TileColor" content="#1976d2"><meta name="msapplication-TileImage" content="/_assets/favicons/mstile-150x150.png"><title>Linux | ProfitTrailer Wiki</title><meta name="description" content="Getting started with a ProfitTrailer installation on Linux"><meta property="og:title" content="Linux"><meta property="og:type" content="website"><meta property="og:description" content="Getting started with a ProfitTrailer installation on Linux"><meta property="og:image"><meta property="og:url" content="https://wiki.profittrailer.com/en/installation/linux"><meta property="og:site_name" content="ProfitTrailer Wiki"><link rel="apple-touch-icon" sizes="180x180" href="/_assets/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="192x192" href="/_assets/favicons/android-chrome-192x192.png"><link rel="icon" type="image/png" sizes="32x32" href="/_assets/favicons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/_assets/favicons/favicon-16x16.png"><link rel="mask-icon" href="/_assets/favicons/safari-pinned-tab.svg" color="#1976d2"><link rel="manifest" href="/_assets/manifest.json"><script>var siteConfig = {"title":"ProfitTrailer Wiki","theme":"default","darkMode":false,"lang":"en","rtl":false,"company":"ProfitTrailer B.V.","contentLicense":"","logoUrl":"/logo-trans-small.png"}
+var siteLangs = [{"code":"en","name":"English"}]
+</script><link type="text/css" rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css"><link type="text/css" rel="stylesheet" href="/_assets/css/app.1be885be7b290bb7c8bc.css"><script type="text/javascript" src="/_assets/js/runtime.js?1601761667"></script><script type="text/javascript" src="/_assets/js/app.js?1601761667"></script></head><body><div id="root"><page locale="en" path="installation/linux" title="Linux" description="Getting started with a ProfitTrailer installation on Linux" :tags="[{&quot;tag&quot;:&quot;linux&quot;,&quot;title&quot;:&quot;linux&quot;}]" created-at="2020-06-23T20:21:34.748Z" updated-at="2021-01-24T11:31:55.934Z" author-name="Administrator" :author-id="1" :is-published="true" toc="W3sidGl0bGUiOiJJbnN0YWxsaW5nIEphdmEiLCJhbmNob3IiOiIjaW5zdGFsbGluZy1qYXZhIiwiY2hpbGRyZW4iOltdfSx7InRpdGxlIjoiSW5zdGFsbGluZyBub2RlIGFuZCBucG0iLCJhbmNob3IiOiIjaW5zdGFsbGluZy1ub2RlLWFuZC1ucG0iLCJjaGlsZHJlbiI6W119LHsidGl0bGUiOiJJbnN0YWxsaW5nIGxhdGVzdCBQcm9maXRUcmFpbGVyIiwiYW5jaG9yIjoiI2luc3RhbGxpbmctbGF0ZXN0LXByb2ZpdHRyYWlsZXIiLCJjaGlsZHJlbiI6W119LHsidGl0bGUiOiJSdW5uaW5nIFByb2ZpdFRyYWlsZXIiLCJhbmNob3IiOiIjcnVubmluZy1wcm9maXR0cmFpbGVyIiwiY2hpbGRyZW4iOltdfV0=" :page-id="6" sidebar="W3siaSI6InNkaS0xIiwiayI6ImhlYWRlciIsImwiOiJTdXBwb3J0IiwiYyI6bnVsbCwieSI6bnVsbCwidCI6bnVsbH0seyJpIjoic2RpLTIiLCJrIjoibGluayIsImwiOiJEaXNjb3JkIENvbW11bml0eSIsImMiOiJmYXMgZmEtY29tbWVudHMiLCJ5IjoiZXh0ZXJuYWxibGFuayIsInQiOiJodHRwczovL2Rpc2NvcmQuZ2cvZWFrQjIzYiJ9LHsiaSI6InNkaS0zIiwiayI6ImRpdmlkZXIiLCJsIjpudWxsLCJjIjpudWxsLCJ5IjpudWxsLCJ0IjpudWxsfSx7ImkiOiJzZGktNCIsImsiOiJoZWFkZXIiLCJsIjoiR2V0dGluZyBTdGFydGVkIiwiYyI6bnVsbCwieSI6bnVsbCwidCI6bnVsbH0seyJpIjoic2RpLTUiLCJrIjoibGluayIsImwiOiJSZXF1aXJlbWVudHMiLCJjIjoiZmFyIGZhLWNoZWNrLWNpcmNsZSIsInkiOiJwYWdlIiwidCI6Ii9lbi9yZXF1aXJlbWVudHMifSx7ImkiOiJzZGktNiIsImsiOiJsaW5rIiwibCI6Ikluc3RhbGxhdGlvbiIsImMiOiJmYXMgZmEtdG9vbHMiLCJ5IjoicGFnZSIsInQiOiIvZW4vaW5zdGFsbGF0aW9uIn0seyJpIjoic2RpLTciLCJrIjoibGluayIsImwiOiJPdGhlciBTZXR1cCBHdWlkZXMiLCJjIjoibWRpLWZvbGRlciIsInkiOiJwYWdlIiwidCI6Ii9lbi9vdGhlcnNldHVwIn0seyJpIjoic2RpLTgiLCJrIjoibGluayIsImwiOiJVcGdyYWRlIiwiYyI6ImZhcyBmYS1hcnJvdy1hbHQtY2lyY2xlLXVwIiwieSI6InBhZ2UiLCJ0IjoiL2VuL3VwZ3JhZGUifSx7ImkiOiJzZGktOSIsImsiOiJsaW5rIiwibCI6IkZBUSIsImMiOiJmYSBmYS1xdWVzdGlvbiIsInkiOiJwYWdlIiwidCI6Ii9lbi9Db21tb24ifSx7ImkiOiJzZGktMTAiLCJrIjoiZGl2aWRlciIsImwiOm51bGwsImMiOm51bGwsInkiOm51bGwsInQiOm51bGx9LHsiaSI6InNkaS0xMSIsImsiOiJoZWFkZXIiLCJsIjoiQ29uZmlndXJhdGlvbiIsImMiOm51bGwsInkiOm51bGwsInQiOm51bGx9LHsiaSI6InNkaS0xMiIsImsiOiJsaW5rIiwibCI6IkNvbmZpZyIsImMiOiJmYXMgZmEtY29nIiwieSI6InBhZ2UiLCJ0IjoiL2VuL2NvbmZpZyJ9LHsiaSI6InNkaS0xMyIsImsiOiJsaW5rIiwibCI6IldlYiBJbnRlcmZhY2UgR3VpZGUiLCJjIjoibWRpLWNoZXZyb24tcmlnaHQiLCJ5IjoicGFnZSIsInQiOiIvZW4vd2ViaW50ZXJmYWNlZ3VpZGUifSx7ImkiOiJzZGktMTQiLCJrIjoiZGl2aWRlciIsImwiOm51bGwsImMiOm51bGwsInkiOm51bGwsInQiOm51bGx9LHsiaSI6InNkaS0xNSIsImsiOiJoZWFkZXIiLCJsIjoiVHJhZGluZyIsImMiOm51bGwsInkiOm51bGwsInQiOm51bGx9LHsiaSI6InNkaS0xNiIsImsiOiJsaW5rIiwibCI6IkJ1eSBhbmQgU2VsbCBMb2dpYyIsImMiOiJtZGktY2hldnJvbi1yaWdodCIsInkiOiJwYWdlIiwidCI6Ii9lbi9idXlhbmRzZWxsbG9naWMifSx7ImkiOiJzZGktMTciLCJrIjoibGluayIsImwiOiJCdXkgYW5kIFNlbGwgU3RyYXRlZ2llcyIsImMiOiJtZGktY2hldnJvbi1yaWdodCIsInkiOiJwYWdlIiwidCI6Ii9lbi9idXlzZWxsc3RyYXRlZ2llcyJ9LHsiaSI6InNkaS0xOCIsImsiOiJsaW5rIiwibCI6IkEgVHJhaWxpbmcgU3RvcnkiLCJjIjoibWRpLWNoZXZyb24tcmlnaHQiLCJ5IjoicGFnZSIsInQiOiIvZW4vYXRyYWlsaW5nc3RvcnkifSx7ImkiOiJzZGktMTkiLCJrIjoibGluayIsImwiOiJEQ0EgQnV5aW5nIiwiYyI6Im1kaS1jaGV2cm9uLXJpZ2h0IiwieSI6InBhZ2UiLCJ0IjoiL2VuL2RjYWJ1eWluZyJ9LHsiaSI6InNkaS0yMCIsImsiOiJsaW5rIiwibCI6IkEgU09NIFN0b3J5IiwiYyI6Im1kaS1jaGV2cm9uLXJpZ2h0IiwieSI6InBhZ2UiLCJ0IjoiL2VuL2Fzb21zdG9yeSJ9LHsiaSI6InNkaS0yMSIsImsiOiJsaW5rIiwibCI6IkV4Y2hhbmdlIEluZm8iLCJjIjoibWRpLWNoZXZyb24tcmlnaHQiLCJ5IjoicGFnZSIsInQiOiIvZW4vZXhjaGFuZ2VpbmZvIn0seyJpIjoic2RpLTIyIiwiayI6ImRpdmlkZXIifV0=" nav-mode="MIXED" effective-permissions="eyJjb21tZW50cyI6eyJyZWFkIjpmYWxzZSwid3JpdGUiOmZhbHNlLCJtYW5hZ2UiOmZhbHNlfSwiaGlzdG9yeSI6eyJyZWFkIjpmYWxzZX0sInNvdXJjZSI6eyJyZWFkIjpmYWxzZX0sInBhZ2VzIjp7InJlYWQiOnRydWUsIndyaXRlIjpmYWxzZSwibWFuYWdlIjpmYWxzZSwiZGVsZXRlIjpmYWxzZSwic2NyaXB0IjpmYWxzZSwic3R5bGUiOmZhbHNlfSwic3lzdGVtIjp7Im1hbmFnZSI6ZmFsc2V9fQ=="><template slot="contents"><div><blockquote class="is-info">
+<p>Before going any further make sure you meet all the <a class="is-internal-link is-valid-page" href="/en/requirements">requirements</a>.</p>
+</blockquote><div>
+</div><h1 class="toc-header" id="installing-java"><a href="#installing-java" class="toc-anchor">¶</a> Installing Java</h1><div>
+</div><pre class="prismjs line-numbers"><code class="language-">sudo apt-get install software-properties-common
+sudo apt update
+
+# Optional, on some systems this is missing
+sudo apt-get install apt-transport-https ca-certificates
+
+wget -qO - https://adoptopenjdk.jfrog.io/adoptopenjdk/api/gpg/key/public | sudo apt-key add -
+sudo add-apt-repository --yes https://adoptopenjdk.jfrog.io/adoptopenjdk/deb/
+sudo apt update
+sudo apt install adoptopenjdk-8-hotspot
+</code></pre><div>
+</div><h1 class="toc-header" id="installing-node-and-npm"><a href="#installing-node-and-npm" class="toc-anchor">¶</a> Installing node and npm</h1><div>
+</div><pre class="prismjs line-numbers"><code class="language-">curl -sL https://deb.nodesource.com/setup_14.x | sudo bash -
+sudo apt-get install -y nodejs
+
+# check if npm is installed
+npm -version
+
+# check if npm is installed. If it returns a version number it is installed. 
+npm -version
+
+# You can skip this step if npm is already installed
+sudo apt-get install npm
+
+# continue here once npm is installed
+sudo npm install pm2@latest -g
+</code></pre><div>
+</div><h1 class="toc-header" id="installing-latest-profittrailer"><a href="#installing-latest-profittrailer" class="toc-anchor">¶</a> Installing latest ProfitTrailer</h1><div>
+</div><pre class="prismjs line-numbers"><code class="language-">cd /tmp
+wget https://download.profittrailer.com/ProfitTrailer.zip
+
+sudo apt-get install unzip
+unzip ProfitTrailer.zip
+
+# Change /var/opt/pt to something else when installing a second or third bot
+mv ProfitTrailer-* /var/opt/pt
+</code></pre><div>
+</div><h1 class="toc-header" id="running-profittrailer"><a href="#running-profittrailer" class="toc-anchor">¶</a> Running ProfitTrailer</h1><div>
+</div><pre class="prismjs line-numbers"><code class="language-">cd /var/opt/pt
+chmod +x ProfitTrailer.jar
+
+# when running a second bot
+# edit pm2-ProfitTrailer.json file with vi or nano or your preffered editor
+# and change name property inside the file to a unique name and save
+pm2 start pm2-ProfitTrailer.json
+
+pm2 save
+pm2 startup
+</code></pre><div>
+</div><p>At this point the bot should be running.<br>
+<code>pm2 list</code> -&gt; will show a list of running processes. If it says stopped/failed something went wrong.<br>
+<code>pm2 logs</code> -&gt; will show a scrolling log file for the running processes</p><div>
+</div></div></template><template slot="comments"><div><comments></comments></div></template></page></div></body></html>
